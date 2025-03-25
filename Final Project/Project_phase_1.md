@@ -1,6 +1,6 @@
 # Project phase 1 - Definition and planning
 
-Add something
+Story behind the system
 
 ## 1. User Personas
 
@@ -12,7 +12,7 @@ Add something
 
 ## 3. UI Prototypes
 
-Add something
+use figma!
 
 ## 4. Information Architecture and Technical Design
 
