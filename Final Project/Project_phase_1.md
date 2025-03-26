@@ -15,8 +15,8 @@ Place of residence: Finland
 Personality: Self-paced and thrifty, basically cooks his own meals every day
 
 Needs:
-Want to know recipes that are easy to make when I don't have much time
-I want recipes that use up all the ingredients (eco-friendly/saving money)
+- Want to know recipes that are easy to make when I don't have much time
+- want recipes that use up all the ingredients (eco-friendly/saving money)
 
 Behavior:
 
