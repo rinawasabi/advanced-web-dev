@@ -11,7 +11,9 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 Age: 22
 Occupation: 3rd-year IT engineer student at Centria UAS
+
 Place of residence: Finland
+
 Personality: Self-paced and thrifty, basically cooks his own meals every day
 
 Needs:
