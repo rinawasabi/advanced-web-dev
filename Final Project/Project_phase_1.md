@@ -13,49 +13,54 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 ### Persona 1: University student living alone - "Aki"
 
-**Age**: 22
+**Age**: 24
 
-**Occupation:** 3rd-year IT engineer student at Centria UAS
+**Occupation:** 3rd-year IT engineering student at Centria UAS
 
-**Place of residence:** Finland (Came from Japan)
+**Place of residence:** Kokkola, Finland (Originally from Japan)
 
-**Personality:** Self-paced and thrifty, basically cooks his own meals every day
+**Personality:** Self-paced and thrifty. He cooks his own meals every day and prefers simple, budget-friendly solutions.
 
 **Needs:**
-- Want to know recipes that are easy to make as he is a busy student and don't have much time
-- want recipes that use up all the ingredients (eco-friendly/saving money)
+- Recipes that are quick and easy to prepare due to his busy student life.
+- Ideas that help him use up leftover ingredients to reduce waste and save money.
+- The ability to explore and learn from other people’s recipe ideas.
 
 **Behavior:**
-- Often searching for "○○ ingredients recipe" on his smartphone
-- Saving favorite recipes as favorites
+- Frequently searches for food names + “recipe” on his smartphone.
+- Likes to save favorite recipes for future use and inspiration.
 
 **Complainments:**
-- Look for recipes with simple ingredients
-- Make my own "favorite recipe notebook"
-- want to refer to other people's ideas as well
+- It is hard for him to find simple recipes that use just a few ingredients.
+- Wants a personal "recipe notebook" where he can organize and revisit his favorite meals easily.
+
 
 ### Persona 2: Family-oriented housewife - "Teija"
 
 **Age:** 43
 
-**Occupation:** Housewife
+**Occupation:** Full-time housewife (has 3 children)
 
-**Place of residence:** Finland
+**Place of residence:** Kokkola, Finland
 
-**Personality:** Kind and family oriented
+**Personality:** Kind, nurturing, and highly family-oriented. She enjoys cooking for her family and values practicality in daily life.
 
 **Needs:**
-- Recipes which provide quick meals
-- 
+- Recipes for quick, family-friendly meals that can be prepared on busy days.
+- A way to manage, store, and even share her own recipes digitally.
+- A space where she can share her cooking ideas with others.
+- A simple and intuitive app interface, since she is not very confident with technology.
 
 **Behavior:**
-- Often writes down her recipes on paper
-- I save my favorite recipes as favorites
+- Keeps recipes scattered across old notebooks, printed sheets, and even sticky notes.
+- Occasionally explores cooking blogs and recipe websites, especially when looking for ideas for kids’ lunches or seasonal dishes.
+- Although she is not tech-savvy, she is learning to use digital tools to make her cooking life easier.
 
 **Complainments:**
-- Look for recipes with simple ingredients
-- Make my own "favorite recipe notebook"
-- want to refer to other students' ideas as well
+- Managing recipes across multiple paper sources is frustrating and inefficient.
+- It is hard to remember which version of a recipe her kids liked most.
+- She wants to pass her best recipes to her children in the future, but needs a digital format for that.
+
 
 ### Persona 3: Company employee who likes to cook - "Pekka"
 
@@ -63,9 +68,9 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 **Occupation:** Employee at Elisa Oy 
 
-**Place of residence:** Finland
+**Place of residence:** Tampere, Finland
 
-**Personality:** Kind and family oriented
+**Personality:** 
 
 **Needs:**
 - aa
@@ -73,12 +78,12 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 **Behavior:**
 - aa
-- I save my favorite recipes as favorites
+- a
 
 **Complainments:**
-- Look for recipes with simple ingredients
-- Make my own "favorite recipe notebook"
-- want to refer to other stude
+- a
+- a
+- a
 
   
 ## 2. Use Cases and User Flows
