@@ -90,4 +90,5 @@ Add something
 
 ## 5. Project Management and User Testing
 
-Add something
+This project is implemented solely. As this project has 4 phases, they were divded as follows.
+
