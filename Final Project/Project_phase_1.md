@@ -123,10 +123,9 @@ This might slightly change as assignments and exams of other courses might inter
 
 Some of the risks of this project should be noted.
 - **Falling behind schedule**:
+  There is a risk that the project might fall behind schedule. To mitigate this, I should work as much as possible when I have time. I should also ask for guidance     from the teacher and classmates.
   
-There is a risk that the project might fall behind schedule. To mitigate this, I should work as much as possible when I have time. I should also ask for guidance from the teacher and classmates.
 - **Overwork**:
-
-As this project is undertaken entirely solo, there’s no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it’s crucial to set firm boundaries between professional responsibilities and personal time, enabling a balanced and healthy lifestyle.
+  As this project is undertaken entirely solo, there’s no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it’s crucial    to set firm boundaries between professional responsibilities and personal time, enabling a balanced and healthy lifestyle.
 
 ### User Testing
