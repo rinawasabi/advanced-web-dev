@@ -100,22 +100,21 @@ Add something
 
 ## 5. Project Management and User Testing
 
-**Project Management**
+### Project Management
 
 This project is implemented solely. As this project has 4 phases, they were divded as follows.
 This might slightly change as assignments and exams of other courses might interfare.
 
-### Phase 1 - Definition and Planning (Week 13-14)
+**Phase 1 - Definition and Planning (Week 13-14)**
 
 
-### Phase 2 - Basic structure and main functionalities (Week 15-16)
+**Phase 2 - Basic structure and main functionalities (Week 15-16)**
 
 
-### Phase 3 - Advanced features and optimization (Week 17-18)
+**Phase 3 - Advanced features and optimization (Week 17-18)**
 
 
-### Phase 4 - Refinement & Presentation (Week 19-20)
+**Phase 4 - Refinement & Presentation (Week 19-20)**
 
 
-**User Testing**
-
+### User Testing
