@@ -78,15 +78,18 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 - The ability to write detailed instructions and personal notes for each dish.
 
 **Behavior:**
-- aa
-- a
+- Cooks several times a week, especially on weekends.
+- Enjoys trying Japanese cuisine at home.
+- Sometimes shares his dishes on Facebook or sends recipes to friends by email.
+- Likes to modify recipes and keep track of what worked best.
 
 **Pain Points:**
-- a
-- a
-- a
+- Struggles to find a simple tool that shows clear contents of his recipes.
+- Doesn’t like apps that feel too trendy or overloaded with ads and videos.
+- Finds it hard to remember which version of a modified recipe he liked most.
+- Wants an app that focuses more on quality and clarity, less on social media features.
 
-  
+
 ## 2. Use Cases and User Flows
 
 need 5 use cases
@@ -119,11 +122,13 @@ This might slightly change as assignments and exams of other courses might inter
 
 
 Some of the risks of this project should be noted.
-- **Falling behind schedule**
+- **Falling behind schedule**:
+
   There is a risk that the project might fall behind schedule. To mitigate this,
   I should work as much as possible when I have time. I should also ask for guidance from the teacher and classmates.
-- **Overwork**
-  Since this project is being completely individually, there is no opportunity to share
+- **Overwork**:
+
+   Since this project is being completely individually, there is no opportunity to share
   the workload, increasing the risk of overwork. To prevent burnout, I should establish
   clear boundaries between work and personal time, ensuring that I maintain a
   healthy work-life balance.
