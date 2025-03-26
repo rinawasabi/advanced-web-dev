@@ -4,20 +4,18 @@ Upon a development of the application, there are seveal reasons why I wanted to 
 
 ## 1. User Personas
 
-# Persona 1: University student living alone - "Aki"
+### Persona 1: University student living alone - "Aki"
 
 Age: 22
 
-Occupation: 3rd year IT engineer student at an Centria UAS
+Occupation: 3rd-year IT engineer student at Centria UAS
 
 Place of residence: Finland
 
 Personality: Self-paced and thrifty, basically cooks his own meals every day
 
 Needs:
-
 Want to know recipes that are easy to make when I don't have much time
-
 I want recipes that use up all the ingredients (eco-friendly/saving money)
 
 Behavior:
