@@ -30,7 +30,7 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 - Frequently searches for food names + “recipe” on his smartphone.
 - Likes to save favorite recipes for future use and inspiration.
 
-**Complainments:**
+**Pain Points:**
 - It is hard for him to find simple recipes that use just a few ingredients.
 - Wants a personal "recipe notebook" where he can organize and revisit his favorite meals easily.
 
@@ -56,31 +56,32 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 - Occasionally explores cooking blogs and recipe websites, especially when looking for ideas for kids’ lunches or seasonal dishes.
 - Although she is not tech-savvy, she is learning to use digital tools to make her cooking life easier.
 
-**Complainments:**
+**Pain Points:**
 - Managing recipes across multiple paper sources is frustrating and inefficient.
 - It is hard to remember which version of a recipe her kids liked most.
 - She wants to pass her best recipes to her children in the future, but needs a digital format for that.
 
 
-### Persona 3: Company employee who likes to cook - "Pekka"
+### Persona 3: Company employee who enjoys cooking - "Pekka"
 
 **Age:** 57
 
-**Occupation:** Employee at Elisa Oy 
+**Occupation:** Senior employee at Elisa Oy 
 
 **Place of residence:** Tampere, Finland
 
-**Personality:** 
+**Personality:** Calm, detail-oriented, and enjoys quiet hobbies like gardening and cooking. Cooking is a way to relax after work and often experiments with new techniques or international dishes.
 
 **Needs:**
-- aa
-- aa
+- A platform to organize and store his own recipes digitally.
+- A place to discover new and interesting recipes from other home cooks.
+- The ability to write detailed instructions and personal notes for each dish.
 
 **Behavior:**
 - aa
 - a
 
-**Complainments:**
+**Pain Points:**
 - a
 - a
 - a
@@ -116,5 +117,16 @@ This might slightly change as assignments and exams of other courses might inter
 
 **Phase 4 - Refinement & Presentation (Week 19-20)**
 
+
+Some of the risks of this project should be noted.
+- **Falling behind schedule**
+  There is a risk that the project might fall behind schedule. To mi5gate this, I will work
+  on the project according to the 5me schedule, which allocates four hours per day of
+  work over ten days.
+- **Overwork**
+  Since this project is being completed individually, there is no opportunity to share
+  the workload, increasing the risk of overwork. To prevent burnout, I should establish
+  clear boundaries between work and personal 5me, ensuring that I maintain a
+  healthy work-life balance.
 
 ### User Testing
