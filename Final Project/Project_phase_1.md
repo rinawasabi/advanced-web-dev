@@ -120,13 +120,12 @@ This might slightly change as assignments and exams of other courses might inter
 
 Some of the risks of this project should be noted.
 - **Falling behind schedule**
-  There is a risk that the project might fall behind schedule. To mi5gate this, I will work
-  on the project according to the 5me schedule, which allocates four hours per day of
-  work over ten days.
+  There is a risk that the project might fall behind schedule. To mitigate this,
+  I should work as much as possible when I have time. I should also ask for guidance from the teacher and classmates.
 - **Overwork**
-  Since this project is being completed individually, there is no opportunity to share
+  Since this project is being completely individually, there is no opportunity to share
   the workload, increasing the risk of overwork. To prevent burnout, I should establish
-  clear boundaries between work and personal 5me, ensuring that I maintain a
+  clear boundaries between work and personal time, ensuring that I maintain a
   healthy work-life balance.
 
 ### User Testing
