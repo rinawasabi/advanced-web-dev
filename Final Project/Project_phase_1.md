@@ -26,7 +26,7 @@ Behavior:
 - Often searching for "○○ ingredients recipe" on his smartphone
 - Saving favorite recipes as favorites
 
-Need:
+Complainments:
 - Look for recipes with simple ingredients
 - Make my own "favorite recipe notebook"
 - want to refer to other people's ideas as well
@@ -49,7 +49,7 @@ Behavior:
 - Often writes down her recipes on paper
 - I save my favorite recipes as favorites
 
-Need:
+Complainments:
 - Look for recipes with simple ingredients
 - Make my own "favorite recipe notebook"
 - want to refer to other students' ideas as well
@@ -72,13 +72,15 @@ Behavior:
 - aa
 - I save my favorite recipes as favorites
 
-Need:
+Complainments:
 - Look for recipes with simple ingredients
 - Make my own "favorite recipe notebook"
 - want to refer to other stude
+
+  
 ## 2. Use Cases and User Flows
 
-5 use cases
+need 5 use cases
 
 ## 3. UI Prototypes
 
@@ -90,5 +92,21 @@ Add something
 
 ## 5. Project Management and User Testing
 
+**Project Management**
 This project is implemented solely. As this project has 4 phases, they were divded as follows.
+This might slightly change as assignments and exams of other courses might interfare.
+
+# Phase 1 - Definition and Planning (Week 13-14)
+
+
+# Phase 2 - Basic structure and main functionalities (Week 15-16)
+
+
+# Phase 3 - Advanced features and optimization (Week 17-18)
+
+
+# Phase 4 - Refinement & Presentation (Week 19-20)
+
+
+**User Testing**
 
