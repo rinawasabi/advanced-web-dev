@@ -92,7 +92,21 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 ## 2. Use Cases and User Flows
 
-need 5 use cases
+### 1. View All Recipes
+
+**User:** Any user (Aki, Teija, Pekka) 
+**Trigger:** User opens the homepage or clicks the "All Recipes" menu  
+
+**Process:**
+- The system sends a `GET /api/recipes` request to the backend.
+- All available recipes are retrieved from the database.
+- The recipes are displayed as a list or card view.
+- The user can scroll through the list and click on one to view more details.
+
+**Outcome:**
+- The user sees all existing recipes and can choose one to explore further.
+
+---
 
 ## 3. UI Prototypes
 
