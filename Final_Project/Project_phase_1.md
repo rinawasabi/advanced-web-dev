@@ -97,7 +97,7 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 
 ### 1. View All Recipes
 
-**User:** Any user (Aki, Teija, Pekka) 
+**User:** Any user 
 
 **Trigger:** User opens the homepage or clicks the "Home" menu on other pages
 
@@ -107,52 +107,53 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 - The recipes are displayed as a card view.
 - The user can scroll through the recipes and click on one and view more details.
 
-**Outcome:**
-- The user sees all existing recipes and can choose one to explore further.
+**Outcome:** The user sees all existing recipes and can choose one to explore further.
 
-### 2. Add a New Recipe
+### 2. View Detailed Recipes
+**User:** Any user 
 
-**User:** Any user (Aki, Teija, Pekka)
+**Trigger:** User clicks on a recipe card
+
+**Process:**
+- The system sends a `/api/recipes/:id` to fetch full recipe data.
+- The recipe detail page displays all fields (ingredients, steps... etc.)
+- The frontend renders a new page showing all of the recipe information
+
+
+**Outcome:** User can read the full instructions and ingredients.
+
+### 3. Add a New Recipe
+**User:** Any user
+
+**Trigger:** User clicks the "Add" menu on homepage and detailed recipe pages.
+
+**Process:**
+- `POST /api/recipes`request to the backend.?
+
+**Outcome:** The new recipe is added and shown on the homepage.
+
+### 4. Edit an Existing Recipe
+**User:** Any user 
 
 **Trigger:** 
+
+**Process:** 
+- aa
+- ..
+  
+**Outcome:** The recipe is updated in the database and re-displayed.
+
+
+### 5. Delete an Existing Recipe
+**User:** Any user
+
+**Trigger:** User clicks “Delete” on a recipe detail page
 
 **Process:**
 
 
-**Outcome:**
+**Outcome:** The recipe is permanently removed.
 
-### 3. Edit an Existing Recipe
-
-**User:** Any user (Aki, Teija, Pekka) 
-
-**Trigger:** 
-
-**Process:**
-
-
-**Outcome:**
-
-### 4. Delete an Existing Recipe
-
-**User:** Any user (Aki, Teija, Pekka) 
-
-**Trigger:** 
-
-**Process:**
-
-
-**Outcome:**
-
-### 5. aa
-
-**User:** Any user (Aki, Teija, Pekka) 
-
-**Trigger:** 
-
-**Process:**
-
-
-**Outcome:**
 
 
 ## 3. UI Prototypes
@@ -179,38 +180,71 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 - A unified form component used for both creating and updating recipes.
 - It includes basic validation and error handling (e.g., required fields).
 
-### 2. Data Flow and User Actions
-
-1. **Recipe Creation**
+#### 2. Data Flow and User Actions
+**Recipe Creation**
    - Users fill in a form with recipe data (title, ingredients, instructions)
    - The data is sent to the backend via a POST request and saved in SQLite
    - On submit, the recipe is saved in the SQLite database and shown on the main page
 
-2. **View and Edit Recipe**
+**View and Edit Recipe**
    - Users can click a recipe card to view its details (fetched by recipe ID)
    - Edit and delete buttons allow updating or removing the recipe from the database
 
-3. **Optional Future Features**
+**Optional Future Features**
    - Filtering or searching recipes by keyword
    - Favoriting or bookmarking recipes
    - Adding recipe tags or categories????
 
-#### 2. Technical Design
-
-
+#### 3. User permission and access control
+- In the current version of Makunote, there is no user authentication or account system.
+- All users can create, edit, and delete any recipe. This was intentional to keep the application simple and accessible.
+- In the future, user accounts should be introduced.
 
 
 ### Technical Design
 
-#### Unit Testing (Vitest)
+#### 1. System Overview
+
+**Frontend**
+- **Framework**: React.js
+- **Styling**: CSS (manual styling with flex/grid)
+- **Routing**: React Router DOM for navigating between pages
+- **Form Handling**: useState + basic validation in the form
+- **API Communication**: Fetch API to interact with the backend
+
+**Backend**
+- **Platform**: Node.js with Express
+- **Database**: SQLite, stored locally for lightweight setup
+  
+**API Integration**
+- The application uses a RESTful API to connect the React frontend with the Node.js + SQLite backend.
+- The API supports the following operations
+- Creating, reading, updating, and deleting recipes
+- Fetching data for specific recipes by ID
+  
+**Endpoints**
+- `GET /api/recipes` – Get all recipes  
+- `GET /api/recipes/:id` – Get one recipe  
+- `POST /api/recipes` – Create new recipe  
+- `PUT /api/recipes/:id` – Update recipe  
+- `DELETE /api/recipes/:id` – Delete recipe
+
+#### 2. Security and Validation
+- Enabled CORS for frontend-backend communication
+- Simple server-side checks for missing or invalid data
+- No authentication in current version (all users can edit/delete all recipes)
+- In the future, login functionality could be added to associate recipes with authors
+
+#### 3. Testing Methods
+**Unit Testing (Vitest)**
 - Using `Vitest` to test frontend components in isolation.
 - Example: Testing recipe creation and deletion functionalities to verify UI logic.
 
-#### End-to-End Testing (Playwright)
+**End-to-End Testing (Playwright)**
 - Using `Playwright` to simulate real user interactions with the frontend in a browser-like environment.
 - Example: Checking that users can add a new recipe via the interface and view it correctly on the homepage.
 
-#### Load Testing (k6)
+**Load Testing (k6)**
 - Simulating concurrent requests to test server performance under load.
 - Running tests with 50 virtual users (VUs) and over 4000 requests.??
 - Measuring response time and throughput to ensure stable API handling.??
