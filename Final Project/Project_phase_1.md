@@ -3,11 +3,13 @@
 ## Backgound story of the project - Makunote
 Upon developing this application, there were several reasons why I decided to implement this project.
 
-First, I wanted to improve my understanding of full-stack development, especially using Node.js, SQLite, and React.
+I wanted to improve my understanding of full-stack development, especially using Node.js, SQLite, and React.
 
-Secondly, I enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes.
+I also enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes. I often wished I had this kind of simple recipe-sharing appication. 
 
-"Maku" means flavor in Finnish. so...
+The name of the app, *Makunote*, reflects this idea. *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of a personal cooking notebook.  
+
+Together, it represents a place to collect and share the flavors of daily life.
 
 ## 1. User Personas
 
