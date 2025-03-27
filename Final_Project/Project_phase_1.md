@@ -1,6 +1,8 @@
 # Project phase 1 - Definition and planning
 
 ## Backgound story of the project - Makunote
+This application is a simple recipe notebook where everyone can easily share and discover everyday recipes.
+
 Upon developing this application, there were several reasons why I decided to implement this project.
 
 I wanted to improve my understanding of full-stack development, especially using Node.js, SQLite, and React.
@@ -96,21 +98,22 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 ### 1. View All Recipes
 
 **User:** Any user (Aki, Teija, Pekka) 
-**Trigger:** User opens the homepage or clicks the "All Recipes" menu  
+
+**Trigger:** User opens the homepage or clicks the "Home" menu on other pages
 
 **Process:**
 - The system sends a `GET /api/recipes` request to the backend.
 - All available recipes are retrieved from the database.
-- The recipes are displayed as a list or card view.
-- The user can scroll through the list and click on one to view more details.
+- The recipes are displayed as a card view.
+- The user can scroll through the recipes and click on one and view more details.
 
 **Outcome:**
 - The user sees all existing recipes and can choose one to explore further.
 
---
-### 2. 
+### 2. Add a New Recipe
 
-**User:** Any user (Aki, Teija, Pekka) 
+**User:** Any user (Aki, Teija, Pekka)
+
 **Trigger:** 
 
 **Process:**
@@ -118,9 +121,10 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 
 **Outcome:**
 
-### 3. aa
+### 3. Edit an Existing Recipe
 
 **User:** Any user (Aki, Teija, Pekka) 
+
 **Trigger:** 
 
 **Process:**
@@ -128,9 +132,10 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 
 **Outcome:**
 
-### 4. aa
+### 4. Delete an Existing Recipe
 
 **User:** Any user (Aki, Teija, Pekka) 
+
 **Trigger:** 
 
 **Process:**
@@ -141,6 +146,7 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 ### 5. aa
 
 **User:** Any user (Aki, Teija, Pekka) 
+
 **Trigger:** 
 
 **Process:**
@@ -155,7 +161,59 @@ During the design phase,
 
 ## 4. Information Architecture and Technical Design
 
-Add something
+### Information Architecture
+
+Makunote is a simple recipe-sharing app focused on everyday cooking. The app was designed to feel like a digital “notebook” where users can explore and contribute casual recipes.
+
+#### 1. Structure Overview
+**Main Page (Home)**  
+- A list of all public recipes.
+- Users can view summaries and navigate to full details.
+- Includes "Add Recipe" and "About" buttons.
+
+**Recipe Detail Page**  
+- Shows full instructions and ingredients for one recipe.
+- Users can edit or delete it.
+
+**Add/Edit Form**  
+- A unified form component used for both creating and updating recipes.
+- It includes basic validation and error handling (e.g., required fields).
+
+### 2. Data Flow and User Actions
+
+1. **Recipe Creation**
+   - Users fill in a form with recipe data (title, ingredients, instructions)
+   - The data is sent to the backend via a POST request and saved in SQLite
+   - On submit, the recipe is saved in the SQLite database and shown on the main page
+
+2. **View and Edit Recipe**
+   - Users can click a recipe card to view its details (fetched by recipe ID)
+   - Edit and delete buttons allow updating or removing the recipe from the database
+
+3. **Optional Future Features**
+   - Filtering or searching recipes by keyword
+   - Favoriting or bookmarking recipes
+   - Adding recipe tags or categories????
+
+#### 2. Technical Design
+
+
+
+
+### Technical Design
+
+#### Unit Testing (Vitest)
+- Using `Vitest` to test frontend components in isolation.
+- Example: Testing recipe creation and deletion functionalities to verify UI logic.
+
+#### End-to-End Testing (Playwright)
+- Using `Playwright` to simulate real user interactions with the frontend in a browser-like environment.
+- Example: Checking that users can add a new recipe via the interface and view it correctly on the homepage.
+
+#### Load Testing (k6)
+- Simulating concurrent requests to test server performance under load.
+- Running tests with 50 virtual users (VUs) and over 4000 requests.??
+- Measuring response time and throughput to ensure stable API handling.??
 
 ## 5. Project Management and User Testing
 
@@ -167,13 +225,14 @@ The inital schedule might slightly change as assignments and exams of other cour
 **Phase 1 - Definition and Planning (Week 13-14)**
 - Defining the user personas, use cases and flow of the application.
 - Implementing the initlal UI design using Figma (wireframes, layout, color scheme).
-- Planning Information Architecture and Technical Design??
+- Designing information architecture and technical design
 - Planning the oveall schedule for the project and user testing of the application.
 
 **Phase 2 - Basic structure and main functionalities (Week 15-16)**
-- a
-- a
-- a
+- Setting up the development environment (React frontend, Node.js backend).
+- Creating the SQLite database and defining the data schema for recipes (e.g., title, ingredients).
+- Developing basic CRUD functionality (create, read , update, delete the recipe).  
+- Documenting them on GitHub.
 
 **Phase 3 - Advanced features and optimization (Week 17-18)**
 - a
@@ -184,14 +243,49 @@ The inital schedule might slightly change as assignments and exams of other cour
 - Debugging minor issues.
 - Checking and verifying the overall functions.
 - Improving UI if possible.
-- Preparing materials for the presentation (e.g., slides, demo, README). 
+- Preparing materials for the presentation (e.g., slides, demo, README).
+
+**Tasks**<br />
+Here, the tasks involved in this project are presented, categorized into different areas such as frontend, backend, planning, and documentation. These tasks reflect the full-stack development process, from early design to final presentation.
+
+- **Frontend:**
+  - Builing UI using React (recipe list, details, form components)
+  - Being responsible for UX as well
+  - Handling routing, form validation, and responsive design
+
+- **Backend:**
+  - Developing REST API with Node.js and Express
+  - Integrating SQLite for data storage
+  - Defined and managed recipe data schema
+
+- **Planning & Design:**
+  - Creating user personas and user flows
+  - Designing wireframes and decided on the visual style
+
+- **Testing & Debugging:**
+  - Testing all CRUD functionalities
+  - Fixing issues related to data flow and user interaction
+
+- **Documentation & Presentation:**
+  - Writing project documentation and README
+  - Preparing explanation for final presentation
+
 
 Some of the risks of this project should be noted.
 - **Falling behind schedule**:
   There is a risk that the project might fall behind schedule. To mitigate this, I should work as much as possible when I have time. I should also ask for guidance     from the teacher and classmates.
   
 - **Overwork**:
-  As this project is undertaken entirely solo, there’s no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it’s crucial    to set firm boundaries between professional responsibilities and personal time, enabling a balanced and healthy lifestyle.
+  As this project is undertaken entirely solo, there’s no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it is crucial   to set firm boundaries between professional responsibilities and personal time, so I can maintain a balance of healthy lifestyle.
+  
+- **Technical issues**:  
+  Since this project uses a full-stack setup (Node.js, SQLite, React), there is a possibility to encounter bugs or limitations, especially when dealing with
+  database queries or connecting frontend and backend. 
+  To address this matter, I should frequently test each feature and consult peers or search online if necessary.
+
+- **Lack of real user feedback**:  
+  As the app is developed individually and not used by actual target users, it might lack real-world usability validation.  
+  To minimize this, I will rely on user personas to simulate different needs. If possible, ask classmates to try the app and provide feedback.
 
 ### User Testing
 
