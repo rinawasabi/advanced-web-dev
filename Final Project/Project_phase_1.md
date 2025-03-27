@@ -1,13 +1,13 @@
 # Project phase 1 - Definition and planning
 
-## Backgound story
+## Backgound story of the project - Makunote
 Upon developing this application, there were several reasons why I decided to implement this project.
 
 First, I wanted to improve my understanding of full-stack development, especially using Node.js, SQLite, and React.
 
 Secondly, I enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes.
 
-Lastly, I wanted to challenge myself by building a fully functional CRUD application from scratch.
+"Maku" means flavor in Finnish. so...
 
 ## 1. User Personas
 
@@ -19,7 +19,7 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 **Place of residence:** Kokkola, Finland (Originally from Japan)
 
-**Personality:** Self-paced and thrifty. He cooks his own meals every day and prefers simple, budget-friendly solutions.
+**Personality:** Self-paced and likes to save money. He cooks his own meals every day and prefers simple, budget-friendly solutions.
 
 **Needs:**
 - Recipes that are quick and easy to prepare due to his busy student life.
@@ -85,7 +85,7 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 
 **Pain Points:**
 - Struggles to find a simple tool that shows clear contents of his recipes.
-- Doesn’t like apps that feel too trendy or overloaded with ads and videos.
+- Does not like apps that feel too trendy or overloaded with ads and videos.
 - Finds it hard to remember which version of a modified recipe he liked most.
 - Wants an app that focuses more on quality and clarity, less on social media features.
 
@@ -106,11 +106,51 @@ Lastly, I wanted to challenge myself by building a fully functional CRUD applica
 **Outcome:**
 - The user sees all existing recipes and can choose one to explore further.
 
----
+--
+### 2. 
+
+**User:** Any user (Aki, Teija, Pekka) 
+**Trigger:** 
+
+**Process:**
+
+
+**Outcome:**
+
+### 3. aa
+
+**User:** Any user (Aki, Teija, Pekka) 
+**Trigger:** 
+
+**Process:**
+
+
+**Outcome:**
+
+### 4. aa
+
+**User:** Any user (Aki, Teija, Pekka) 
+**Trigger:** 
+
+**Process:**
+
+
+**Outcome:**
+
+### 5. aa
+
+**User:** Any user (Aki, Teija, Pekka) 
+**Trigger:** 
+
+**Process:**
+
+
+**Outcome:**
+
 
 ## 3. UI Prototypes
 
-use figma!
+During the design phase, 
 
 ## 4. Information Architecture and Technical Design
 
@@ -121,19 +161,29 @@ Add something
 ### Project Management
 
 This project is implemented solely. As this project has 4 phases, they were divded as follows.
-This might slightly change as assignments and exams of other courses might interfare.
+The inital schedule might slightly change as assignments and exams of other courses might interfare.
 
 **Phase 1 - Definition and Planning (Week 13-14)**
-
+- Defining the user personas, use cases and flow of the application.
+- Implementing the initlal UI design using Figma (wireframes, layout, color scheme).
+- Planning Information Architecture and Technical Design??
+- Planning the oveall schedule for the project and user testing of the application.
 
 **Phase 2 - Basic structure and main functionalities (Week 15-16)**
-
+- a
+- a
+- a
 
 **Phase 3 - Advanced features and optimization (Week 17-18)**
-
+- a
+- a
+- a
 
 **Phase 4 - Refinement & Presentation (Week 19-20)**
-
+- Debugging minor issues.
+- Checking and verifying the overall functions.
+- Improving UI if possible.
+- Preparing materials for the presentation (e.g., slides, demo, README). 
 
 Some of the risks of this project should be noted.
 - **Falling behind schedule**:
@@ -143,3 +193,4 @@ Some of the risks of this project should be noted.
   As this project is undertaken entirely solo, there’s no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it’s crucial    to set firm boundaries between professional responsibilities and personal time, enabling a balanced and healthy lifestyle.
 
 ### User Testing
+
