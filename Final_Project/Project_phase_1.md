@@ -1,7 +1,7 @@
 # Project phase 1 - Definition and planning
 
 ## Backgound story of the project - Makunote
-This application is a simple recipe notebook where everyone can easily share and discover everyday recipes.
+This application is a simple recipe sharing platform where everyone can easily share and discover everyday recipes.
 
 Upon developing this application, there were several reasons why I decided to implement this project.
 
@@ -110,7 +110,7 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 **Outcome:** The user sees all existing recipes and can choose one to explore further.
 
 ### 2. View Detailed Recipes
-**User:** Any user 
+**User:** Any user
 
 **Trigger:** User clicks on a recipe card
 
@@ -119,28 +119,34 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 - The recipe detail page displays all fields (ingredients, steps... etc.)
 - The frontend renders a new page showing all of the recipe information
 
-
 **Outcome:** User can read the full instructions and ingredients.
 
 ### 3. Add a New Recipe
 **User:** Any user
 
-**Trigger:** User clicks the "Add" menu on homepage and detailed recipe pages.
+**Trigger:** User clicks the "Add Recipe" button on the homepage and detailed recipe pages.
 
 **Process:**
-- `POST /api/recipes`request to the backend.?
+- The user is navigated to the recipe creation page.
+- A blank form is displayed with input fields for title, ingredients, and steps
+- The user fills in the information and submits the form
+- A `POST /api/recipes` request is sent to the backend with the new recipe data
+- The backend stores the data in the SQLite database
+- The user is redirected back to the homepage where the new recipe is now listed
 
 **Outcome:** The new recipe is added and shown on the homepage.
 
 ### 4. Edit an Existing Recipe
 **User:** Any user 
 
-**Trigger:** 
+**Process:**
+- The user is navigated to the recipe edit page
+- The form is pre-filled with the existing data for the selected recipe
+- The user makes changes to one or more fields (e.g., title, ingredients, steps)
+- On submission, a `PUT /api/recipes/:id` request is sent with the updated recipe data
+- The backend updates the recipe in the SQLite database
+- The user is redirected to the updated recipe’s detail page
 
-**Process:** 
-- aa
-- ..
-  
 **Outcome:** The recipe is updated in the database and re-displayed.
 
 
@@ -150,15 +156,34 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 **Trigger:** User clicks “Delete” on a recipe detail page
 
 **Process:**
+- The app may show a confirmation dialog to prevent accidental deletion
+- If the user confirms, a `DELETE /api/recipes/:id` request is sent to the backend
+- The backend removes the selected recipe from the SQLite database
+- After deletion, the user is redirected back to the homepage
+- The deleted recipe no longer appears in the recipe list
 
+**Outcome:**  
+The recipe is permanently removed from the database and the user interface.
 
-**Outcome:** The recipe is permanently removed.
+### 6. Searching for an Existing Recipe
+**User:** Any user
 
+**Trigger:** User types a keyword into the search bar on the homepage.
+
+**Process:**
+- The application listens to changes in the search input field
+- As the user types, the app filters through the list of recipes already loaded from the database
+- Only the recipes whose titles include the search term are displayed
+- This is done entirely on the frontend using JavaScript (no additional request to the backend)
+
+**Outcome:**  
+The user can quickly find recipes what they are looking for.
 
 
 ## 3. UI Prototypes
 
-During the design phase, 
+The UI design was first created as wireframes to define the layout and core features. Visual styling and components will later be implemented using React and CSS.
+The link of the Figma prototype - 
 
 ## 4. Information Architecture and Technical Design
 
@@ -170,7 +195,7 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 **Main Page (Home)**  
 - A list of all public recipes.
 - Users can view summaries and navigate to full details.
-- Includes "Add Recipe" and "About" buttons.
+- Includes "Add Recipe," "About" buttons and "Search bar".
 
 **Recipe Detail Page**  
 - Shows full instructions and ingredients for one recipe.
@@ -182,18 +207,13 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 
 #### 2. Data Flow and User Actions
 **Recipe Creation**
-   - Users fill in a form with recipe data (title, ingredients, instructions)
-   - The data is sent to the backend via a POST request and saved in SQLite
-   - On submit, the recipe is saved in the SQLite database and shown on the main page
+   - Users fill in a form with recipe data (title, ingredients, instructions).
+   - The data is sent to the backend via a POST request and saved in SQLite.
+   - On submit, the recipe is saved in the SQLite database and shown on the main page.
 
-**View and Edit Recipe**
-   - Users can click a recipe card to view its details (fetched by recipe ID)
-   - Edit and delete buttons allow updating or removing the recipe from the database
-
-**Optional Future Features**
-   - Filtering or searching recipes by keyword
-   - Favoriting or bookmarking recipes
-   - Adding recipe tags or categories????
+**View, Edit and Delete Recipe**
+   - Users can click a recipe card to view its details (fetched by recipe ID).
+   - Edit and delete buttons allow updating or removing the recipe from the database.
 
 #### 3. User permission and access control
 - In the current version of Makunote, there is no user authentication or account system.
@@ -258,9 +278,10 @@ The inital schedule might slightly change as assignments and exams of other cour
 
 **Phase 1 - Definition and Planning (Week 13-14)**
 - Defining the user personas, use cases and flow of the application.
-- Implementing the initlal UI design using Figma (wireframes, layout, color scheme).
-- Designing information architecture and technical design
-- Planning the oveall schedule for the project and user testing of the application.
+- Implementing the initial UI design using Figma (wireframes, layout, color scheme).
+- Designing information architecture and technical design.
+- Planning the overall schedule for the project and user testing of the application.
+- Documenting them on GitHub.
 
 **Phase 2 - Basic structure and main functionalities (Week 15-16)**
 - Setting up the development environment (React frontend, Node.js backend).
@@ -269,15 +290,18 @@ The inital schedule might slightly change as assignments and exams of other cour
 - Documenting them on GitHub.
 
 **Phase 3 - Advanced features and optimization (Week 17-18)**
-- a
-- a
-- a
+- Enhancing editing and deletion functionality for individual recipes.
+- Adding recipe detail view with full content display (ingredients and steps).
+- Implementing a search bar to filter recipes by title.
+- Enhancing user interface with form validation, basic error handling, and cleaner layout.
+- Documenting them on GitHub.
 
 **Phase 4 - Refinement & Presentation (Week 19-20)**
 - Debugging minor issues.
 - Checking and verifying the overall functions.
 - Improving UI if possible.
-- Preparing materials for the presentation (e.g., slides, demo, README).
+- Preparing materials for the presentation (e.g., demo, README).
+- Documenting them on GitHub.
 
 **Tasks**<br />
 Here, the tasks involved in this project are presented, categorized into different areas such as frontend, backend, planning, and documentation. These tasks reflect the full-stack development process, from early design to final presentation.
@@ -310,7 +334,7 @@ Some of the risks of this project should be noted.
   There is a risk that the project might fall behind schedule. To mitigate this, I should work as much as possible when I have time. I should also ask for guidance     from the teacher and classmates.
   
 - **Overwork**:
-  As this project is undertaken entirely solo, there’s no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it is crucial   to set firm boundaries between professional responsibilities and personal time, so I can maintain a balance of healthy lifestyle.
+  As this project is undertaken entirely solo, there is no possibility to divide the workload, which raises the chance of overworking. To avoid burnout, it is crucial to set firm boundaries between professional responsibilities and personal time, so I can maintain a balance of healthy lifestyle.
   
 - **Technical issues**:  
   Since this project uses a full-stack setup (Node.js, SQLite, React), there is a possibility to encounter bugs or limitations, especially when dealing with
