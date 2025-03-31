@@ -8,3 +8,4 @@
 | 27.3.2025 | 1.5 | Planning the phase 1  | Planning the project schedule  |
 | 27.3.2025 | 1.5 | Planning the phase 1  | Defining the use cases |
 | 30.3.2025 | 1 | Planning the phase 1  |  |
+| 31.3.2025 | 2 | Planning the phase 1  | Making the Prototype |
