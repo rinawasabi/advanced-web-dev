@@ -5,9 +5,9 @@ This application is a simple recipe sharing platform where everyone can easily s
 
 Upon developing this application, there were several reasons why I decided to implement this project.
 
-I wanted to improve my understanding of full-stack development, especially using Node.js, SQLite, and React.
+I wanted to improve my understanding of full-stack development, especially using Node.js, PostgreSQL, and React.
 
-I also enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes. I often wished I had this kind of simple recipe-sharing appication. 
+I also enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes. I often wished I had this kind of simple recipe-sharing application. 
 
 The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecting recipes and cooking ideas. Together, it represents a shared space to store and discover the flavors of everyday life.
 
@@ -102,10 +102,10 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 **Trigger:** User opens the homepage or clicks the "Home" menu on other pages
 
 **Process:**
-- The system sends a `GET /api/recipes` request to the backend.
-- All available recipes are retrieved from the database.
-- The recipes are displayed as a card view.
-- The user can scroll through the recipes and click on one and view more details.
+- The system sends a `GET /api/recipes` request to the backend
+- All available recipes are retrieved from the database
+- The recipes are displayed as a card view
+- The user can scroll through the recipes and click on one and view more details
 
 **Outcome:** The user sees all existing recipes and can choose one to explore further.
 
@@ -127,11 +127,11 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 **Trigger:** User clicks the "Add Recipe" button on the homepage and detailed recipe pages.
 
 **Process:**
-- The user is navigated to the recipe creation page.
+- The user is navigated to the recipe creation page
 - A blank form is displayed with input fields for title, ingredients, and steps
 - The user fills in the information and submits the form
 - A `POST /api/recipes` request is sent to the backend with the new recipe data
-- The backend stores the data in the SQLite database
+- The backend stores the data in the PostgreSQL database
 - The user is redirected back to the homepage where the new recipe is now listed
 
 **Outcome:** The new recipe is added and shown on the homepage.
@@ -158,7 +158,7 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 **Process:**
 - The app can show a confirmation dialog to prevent accidental deletion
 - When the user confirms, a `DELETE /api/recipes/:id` request is sent to the backend
-- The backend removes the selected recipe from the SQLite database
+- The backend removes the selected recipe from the PostgreSQL database
 - After deletion, the user is redirected back to the homepage
 - The deleted recipe no longer appears in the recipe list
 
@@ -179,7 +179,6 @@ The recipe is permanently removed from the database and the user interface.
 **Outcome:**  
 The user can quickly find recipes what they are looking for.
 
-
 ## 3. UI Prototypes
 ### Prototype Objectives
 The UI design was first created as wireframes to define the layout and core features. Visual styling and components will later be implemented using React and CSS.
@@ -191,7 +190,7 @@ Before building the actual application, I created a prototype to:
 
 ### Prototype Development
 
-The wireframes were first drawn by hand and later created using Figma.  
+The wireframes were first drawn on paper and later created using Figma.  
 The goal was to create a simple, user-friendly interface for everyday recipe sharing.
 
 The prototype included the following design elements:
@@ -205,9 +204,9 @@ The prototype included the following design elements:
 - **Shared Add/Edit Form**:
   - Used for both creating and editing recipes
   - Includes field validation (e.g., required recipe name, ingredients)
-  - Has a Submit and Cancel button
+  - Has "Save" and "Cancel" buttons
  
-The link of the Figma prototype - 
+The link of the Figma prototype - https://www.figma.com/design/6EVSQ4YpoGYnLhs6DXirWG/Final-Project-for-Adv-web-course?node-id=0-1&t=dlKvlASjNEuexZaY-1 
 
 ## 4. Information Architecture and Technical Design
 
@@ -232,8 +231,8 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 #### 2. Data Flow and User Actions
 **Recipe Creation**
    - Users fill in a form with recipe data (title, ingredients, instructions).
-   - The data is sent to the backend via a POST request and saved in SQLite.
-   - On submit, the recipe is saved in the SQLite database and shown on the main page.
+   - The data is sent to the backend via a POST request and saved in a PostgreSQL database.
+   - On submit, the recipe is saved in the database and shown on the main page.
 
 **View, Edit and Delete Recipe**
    - Users can click a recipe card to view its details (fetched by recipe ID).
@@ -258,14 +257,15 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 
 **Backend**
 - **Platform**: Node.js with Express
-- **Database**: SQLite, stored locally for lightweight setup
+- **Database**: PostgreSQL (hosted on Azure for scalability and cloud deployment)
   
 **API Integration**
-- The application uses a RESTful API to connect the React frontend with the Node.js + SQLite backend.
+- The application uses a RESTful API to connect the React frontend with the Node.js + PostgreSQL backend
 - The API supports the following operations
 - Creating, reading, updating, and deleting recipes
 - Fetching data for specific recipes by ID
-  
+- All backend services, including the API and database, will be deployed to Azure using App Service and Azure Database for PostgreSQL.
+
 **Endpoints**
 - `GET /api/recipes` – Get all recipes  
 - `GET /api/recipes/:id` – Get one recipe  
@@ -289,9 +289,9 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 - Example: Checking that users can add a new recipe via the interface and view it correctly on the homepage.
 
 **Load Testing (k6)**
-- Simulating concurrent requests to test server performance under load.
-- Running tests with 50 virtual users (VUs) and over 4000 requests.??
-- Measuring response time and throughput to ensure stable API handling.??
+- Simulating concurrent requests to test the performance of the backend API deployed on Azure.
+- Running tests with 50 virtual users (VUs) and over 4000 requests.
+- Measuring response time and throughput to ensure stable API handling.
 
 ## 5. Project Management and User Testing
 
@@ -308,7 +308,7 @@ The inital schedule might slightly change as assignments and exams of other cour
 
 **Phase 2 - Basic structure and main functionalities (Week 15-16)**
 - Setting up the development environment (React frontend, Node.js backend).
-- Creating the SQLite database and defining the data schema for recipes (e.g., title, ingredients).
+- Setting up the PostgreSQL database on Azure and defining the data schema for recipes (e.g., title, ingredients).
 - Developing basic CRUD functionality (create, read , update, delete the recipe).  
 - Documenting them on GitHub.
 
@@ -322,8 +322,9 @@ The inital schedule might slightly change as assignments and exams of other cour
 **Phase 4 - Refinement & Presentation (Week 19-20)**
 - Debugging minor issues.
 - Checking and verifying the overall functions.
-- Improving UI if possible.
+- Improving UI if needed.
 - Preparing materials for the presentation (e.g., demo, README).
+- Deploying the full application to Azure (frontend and backend)
 - Documenting them on GitHub.
 
 **Tasks**<br />
@@ -351,7 +352,6 @@ Here, the tasks involved in this project are presented, categorized into differe
   - Writing project documentation and README
   - Preparing explanation for final presentation
 
-
 Some of the risks of this project should be noted.
 - **Falling behind schedule**:
   There is a risk that the project might fall behind schedule. To mitigate this, I should work as much as possible when I have time. I should also ask for guidance     from the teacher and classmates.
@@ -377,6 +377,7 @@ User testing will be conducted to evaluate the usability of Makunote.
 
 **Environment:** 
 - Depending on the user’s preference, remotely (via screen sharing on Zoom) or face-to-face done.
+- The app will be tested on the deployed Azure environment to ensure it works as expected in the actual hosting environment.
 - Equipment: A normal laptop with a camera to display the prototype, a charger and a notebook for taking notes.
 - Duration: Around 30 minutes, as the website is not highly complex.
 
@@ -393,7 +394,7 @@ User testing will be conducted to evaluate the usability of Makunote.
 - Observations will be made on how they interacted with the interface and whether they experience any confusion. 
 - After testing, short informal interviews will be conducted to gather feedback for improvement and user experience. 
 
-**Scenario:**<br />
+**Scenario:** <br />
 Start the meeting - Greetings, and the purpose and tasks are explained. (~5 min)<br />
                                ↓<br />
 Implement the tasks - Users complete tasks while being observed by me. (~15 min)<br />
