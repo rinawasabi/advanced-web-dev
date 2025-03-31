@@ -296,8 +296,8 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 ## 5. Project Management and User Testing
 
 ### Project Management<br />
-This project is implemented solely. As this project has 4 phases, they were divded as follows.
-The inital schedule might slightly change as assignments and exams of other courses might interfare.
+This project is implemented solely. As this project has 4 phases, they were divided as follows.
+The inital schedule might slightly change as assignments and exams of other courses might interfere.
 
 **Phase 1 - Definition and Planning (Week 13-14)**
 - Defining the user personas, use cases and flow of the application.
@@ -337,7 +337,7 @@ Here, the tasks involved in this project are presented, categorized into differe
 
 - **Backend:**
   - Developing REST API with Node.js and Express
-  - Integrating SQLite for data storage
+  - Integrating PostgreSQL for data storage
   - Defined and managed recipe data schema
 
 - **Planning & Design:**
