@@ -3,11 +3,7 @@
 ## Backgound story of the project - Makunote
 This application is a simple recipe sharing platform where everyone can easily share and discover everyday recipes.
 
-Upon developing this application, there were several reasons why I decided to implement this project.
-
-I wanted to improve my understanding of full-stack development, especially using Node.js, PostgreSQL, and React.
-
-I also enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes. I often wished I had this kind of simple recipe-sharing application. 
+I enjoy cooking and thought it would be meaningful and fun to create an application that allows people to share their favorite recipes. I often wished I had this kind of simple recipe-sharing application. 
 
 The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecting recipes and cooking ideas. Together, it represents a shared space to store and discover the flavors of everyday life.
 
@@ -270,8 +266,8 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 #### 2. Security and Validation
 - Enabled CORS for frontend-backend communication
 - Simple server-side checks for missing or invalid data
-- No authentication in current version (all users can edit/delete all recipes)
-- In the future, login functionality could be added to associate recipes with authors
+- No authentication in current version (all users can edit/delete all recipes)??
+- In the future, stronger login functionality should be added to add more functionalities.
 
 #### 3. Testing Methods
 **Unit Testing (Vitest)**
