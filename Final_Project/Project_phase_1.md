@@ -142,9 +142,9 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 **Process:**
 - The user is navigated to the recipe edit page
 - The form is pre-filled with the existing data for the selected recipe
-- The user makes changes to one or more fields (e.g., title, ingredients, steps)
-- On submission, a `PUT /api/recipes/:id` request is sent with the updated recipe data
-- The backend updates the recipe in the SQLite database
+- The user makes changes to one or more fields (e.g., title, ingredients & steps)
+- When "Save" button is clicked, a `PUT /api/recipes/:id` request is sent with the updated recipe data
+- The backend updates the recipe in the database
 - The user is redirected to the updated recipe’s detail page
 
 **Outcome:** The recipe is updated in the database and re-displayed.
@@ -156,8 +156,8 @@ Th*"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collecti
 **Trigger:** User clicks “Delete” on a recipe detail page
 
 **Process:**
-- The app may show a confirmation dialog to prevent accidental deletion
-- If the user confirms, a `DELETE /api/recipes/:id` request is sent to the backend
+- The app can show a confirmation dialog to prevent accidental deletion
+- When the user confirms, a `DELETE /api/recipes/:id` request is sent to the backend
 - The backend removes the selected recipe from the SQLite database
 - After deletion, the user is redirected back to the homepage
 - The deleted recipe no longer appears in the recipe list
@@ -181,8 +181,32 @@ The user can quickly find recipes what they are looking for.
 
 
 ## 3. UI Prototypes
-
+### Prototype Objectives
 The UI design was first created as wireframes to define the layout and core features. Visual styling and components will later be implemented using React and CSS.
+
+Before building the actual application, I created a prototype to:
+- Define the core features and interactions of the recipe app
+- Sketch out the page layouts and navigation flow
+- Test the usability of the form and basic actions like add, view, edit, and delete
+
+### Prototype Development
+
+The wireframes were first drawn by hand and later created using Figma.  
+The goal was to create a simple, user-friendly interface for everyday recipe sharing.
+
+The prototype included the following design elements:
+- **Home Page**:
+  - Recipe cards shown in a grid layout
+  - A “Add Recipe” button in the navigation bar
+  - A "About the site" button and a search bar also in the navigation bar
+- **Recipe Detail Page**:
+  - Full information about a selected recipe (name, ingredients, steps)
+  - "Edit" and "Delete" buttons
+- **Shared Add/Edit Form**:
+  - Used for both creating and editing recipes
+  - Includes field validation (e.g., required recipe name, ingredients)
+  - Has a Submit and Cancel button
+ 
 The link of the Figma prototype - 
 
 ## 4. Information Architecture and Technical Design
@@ -271,8 +295,7 @@ Makunote is a simple recipe-sharing app focused on everyday cooking. The app was
 
 ## 5. Project Management and User Testing
 
-### Project Management
-
+### Project Management<br />
 This project is implemented solely. As this project has 4 phases, they were divded as follows.
 The inital schedule might slightly change as assignments and exams of other courses might interfare.
 
@@ -346,4 +369,33 @@ Some of the risks of this project should be noted.
   To minimize this, I will rely on user personas to simulate different needs. If possible, ask classmates to try the app and provide feedback.
 
 ### User Testing
+User testing will be conducted to evaluate the usability of Makunote.
 
+**Participants:** 
+- 1 classmate with different cooking habits and 2 family members with different technology experience.
+- Selected based on similarity to the defined user personas.
+
+**Environment:** 
+- Depending on the user’s preference, remotely (via screen sharing on Zoom) or face-to-face done.
+- Equipment: A normal laptop with a camera to display the prototype, a charger and a notebook for taking notes.
+- Duration: Around 30 minutes, as the website is not highly complex.
+
+**Tasks tested:** 
+- Add a new recipe using the form  
+- View full details of an existing recipe
+- Edit an existing recipe
+- Delete a recipe 
+- Navigate between pages (Home, Recipe Detail, Add/Edit)
+- Try using the search bar and find the recipe
+
+**Method:**
+- Each participant will be given basic instructions and asked to use the app independently.
+- Observations will be made on how they interacted with the interface and whether they experience any confusion. 
+- After testing, short informal interviews will be conducted to gather feedback for improvement and user experience. 
+
+**Scenario:**<br />
+Start the meeting - Greetings, and the purpose and tasks are explained. (~5 min)<br />
+                               ↓<br />
+Implement the tasks - Users complete tasks while being observed by me. (~15 min)<br />
+                               ↓<br />
+Discussion - Users freely express their opinions about the website’s usability. (~10 min)
