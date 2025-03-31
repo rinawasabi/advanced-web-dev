@@ -54,7 +54,6 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 - Keeps recipes in old notebooks and even sticky notes.
 - Occasionally explores cooking blogs and recipe websites for ideas for kids’ lunches or seasonal dishes.
 - Although she is not tech-savvy, she tries to use digital tools to make her cooking life easier.
-- Browses through recipes shared by other parents when looking for new meal ideas for her children.
   
 **Needs:**
 - Recipes for quick, family-friendly meals that can be prepared on busy days.
@@ -80,7 +79,6 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 - Cooks several times a week, especially on weekends.
 - Regularly explores recipes posted by other home cooks, especially ones with creative twists or cultural variety.
 - Sometimes shares his dishes on Facebook or sends recipes to friends by email.
-- Enjoys reflecting on and comparing different versions of the same dish shared by others.
 
 **Needs:**
 - A community space focused on meaningful recipe exchange rather than flashy presentation.
@@ -94,32 +92,37 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 
 
 ## 2. Use Cases and User Flows
+### 1. Log in as a User (Lightweight Login)
 
-### 1. View All Recipes
-
-**User:** Any user 
-
-**Trigger:** User opens the homepage or clicks the "Home" menu on other pages
-
-**Process:**
-- The system sends a `GET /api/recipes` request to the backend
-- All available recipes are retrieved from the database
-- The recipes are displayed as a card view
-- The user can scroll through the recipes and click on one and view more details
-
-**Outcome:** The user sees all existing recipes and can choose one to explore further.
-
-### 2. View Detailed Recipes
 **User:** Any user
 
-**Trigger:** User clicks on a recipe card
+**Trigger:** User opens the application for the first time and is prompted to enter their name.
 
 **Process:**
-- The system sends a `/api/recipes/:id` to fetch full recipe data.
-- The recipe detail page displays all fields (ingredients, steps... etc.)
-- The frontend renders a new page showing all of the recipe information
+- A simple input field asks the user to enter their name.
+- Upon submission, the name is saved in `localStorage`.
+- On future visits, the app automatically loads the stored name.
+- When creating a recipe, the name is saved as the `author` field.
+- On recipe cards or detail pages, the app checks if `recipe.author === currentUser` to allow editing or deletion.
 
-**Outcome:** User can read the full instructions and ingredients.
+**Outcome:**  
+The user feels ownership over their content, and only the original author can edit or delete their own recipes.
+
+### 2. Browse and View Recipes
+
+**User:** Any user
+
+**Trigger:** User opens the homepage or clicks on a recipe card
+
+**Process:**
+- When the homepage loads, a `GET /api/recipes` request is sent to the backend.
+- All recipes are retrieved from the database and displayed as cards in a grid layout.
+- The user scrolls through the list and selects a recipe by clicking its card.
+- A `GET /api/recipes/:id` request is sent to fetch the full recipe data.
+- The app navigates to the detail page and displays the recipe's title, ingredients, and steps.
+
+**Outcome:**  
+The user can browse all available recipes and view full details of any selected one.
 
 ### 3. Add a New Recipe
 **User:** Any user
@@ -136,36 +139,27 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 
 **Outcome:** The new recipe is added and shown on the homepage.
 
-### 4. Edit an Existing Recipe
-**User:** Any user 
+### 4. Edit Own Recipe
+**User:** The user who created the recipe
+
+**Trigger:** User clicks “Edit” or “Delete” on their own recipe detail page
 
 **Process:**
-- The user is navigated to the recipe edit page
-- The form is pre-filled with the existing data for the selected recipe
-- The user makes changes to one or more fields (e.g., title, ingredients & steps)
-- When "Save" button is clicked, a `PUT /api/recipes/:id` request is sent with the updated recipe data
-- The backend updates the recipe in the database
-- The user is redirected to the updated recipe’s detail page
-
-**Outcome:** The recipe is updated in the database and re-displayed.
-
-
-### 5. Delete an Existing Recipe
-**User:** Any user
-
-**Trigger:** User clicks “Delete” on a recipe detail page
-
-**Process:**
-- The app can show a confirmation dialog to prevent accidental deletion
-- When the user confirms, a `DELETE /api/recipes/:id` request is sent to the backend
-- The backend removes the selected recipe from the PostgreSQL database
-- After deletion, the user is redirected back to the homepage
-- The deleted recipe no longer appears in the recipe list
+- The app checks if the current user is the recipe’s author.
+- If matched:
+  - **Edit:**
+    - User edits the pre-filled form.
+    - `PUT /api/recipes/:id` request updates the recipe.
+    - Redirects to the updated detail page.
+  - **Delete:**
+    - User confirms deletion.
+    - `DELETE /api/recipes/:id` request removes the recipe.
+    - Redirects to the homepage.
 
 **Outcome:**  
-The recipe is permanently removed from the database and the user interface.
+The recipe’s creator successfully edit or delete their own post.
 
-### 6. Searching for an Existing Recipe
+### 5. Searching for an Existing Recipe
 **User:** Any user
 
 **Trigger:** User types a keyword into the search bar on the homepage.
