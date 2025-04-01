@@ -11,4 +11,5 @@
 | 31.3.2025 | 2 | Planning the phase 1  | Making the Prototype |
 | 31.3.2025 | 1 | Planning the phase 1  | Polishing the Plan |
 | 1.4.2025 | 2 | Planning the phase 1  | Polishing the Plan |
-| 1.4.2025 | 2.5 | Planning the phase 2  | Setting the environment |
+| 1.4.2025 | 2.5 | Planning the phase 2  | Setting up the environment |
+| 1.4.2025 | 1 | Planning the phase 2  | Implementing the Homepage |
