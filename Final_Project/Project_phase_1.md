@@ -98,10 +98,9 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 - The user is greeted with a login screen asking for their name.
 - They enter their name (e.g., “Aki”) and click **“Start Cooking!”**.
 - The app saves the name in `localStorage`, so they will not need to re-enter it on their next visit.
-- When creating a new recipe, the app automatically includes the user’s name as the `author`.
 
 **Outcome:**  
-The user can ...
+The user can successfully start using the application.
 
 ### 2. View Recipes
 
@@ -182,25 +181,6 @@ The wireframes were first drawn on paper and later created using Figma.
 The goal was to create a simple, user-friendly interface.
 
 The prototype included the following design elements:
-
- **Login Page**:
-  - Asks the user to enter their name before accessing the app
-  - Shows the app logo and a “Start Cooking!” button
-
-- **Main Page (Home)**:
-  - Displays recipe cards in a grid layout
-  - Navigation bar includes: "About", "Add Recipe", "My Recipes", buttons and a search bar
-  - Users can switch between all recipes and their own recipes using the toggle
-
-- **Recipe Detail Page**:
-  - Shows full details of a selected recipe (name, ingredients, steps)
-  - Includes "Edit", "Delete", "Add Recipe", and "Home" buttons
-
-- **Add/Edit Form Page**:
-  - Shared form used for both creating and updating recipes
-  - Contains fields for recipe name, ingredients, and step-by-step instructions
-  - Includes form validation for required fields
-  - Features "Save", "Cancel", and "Home" buttons
  
 The link of the Figma prototype - https://www.figma.com/design/6EVSQ4YpoGYnLhs6DXirWG/Final-Project-for-Adv-web-course?node-id=0-1&t=dlKvlASjNEuexZaY-1 
 
