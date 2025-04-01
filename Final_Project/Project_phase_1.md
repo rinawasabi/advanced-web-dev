@@ -180,8 +180,6 @@ Before building the actual application, I created a prototype to:
 The wireframes were first drawn on paper and later created using Figma.  
 The goal was to create a simple, user-friendly interface.
 
-The prototype included the following design elements:
- 
 The link of the Figma prototype - https://www.figma.com/proto/6EVSQ4YpoGYnLhs6DXirWG/Final-Project-for-Adv-web-course?node-id=31-2&p=f&t=ObDde40iGF31soYy-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
 
 ## 4. Information Architecture and Technical Design
