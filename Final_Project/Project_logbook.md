@@ -9,4 +9,6 @@
 | 27.3.2025 | 1.5 | Planning the phase 1  | Defining the use cases |
 | 30.3.2025 | 1 | Planning the phase 1  | Defining Information Architecture and Technical Design |
 | 31.3.2025 | 2 | Planning the phase 1  | Making the Prototype |
-| 31.3.2025 | 1 | Planning the phase 2  |  |
+| 31.3.2025 | 1 | Planning the phase 1  | Polishing the Plan |
+| 1.4.2025 | 2 | Planning the phase 1  | Polishing the Plan |
+| 1.4.2025 | 2.5 | Planning the phase 2  | Setting the environment |
