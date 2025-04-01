@@ -1,10 +1,13 @@
 # Project phase 2 - Basic structure and main functionalities
-
-Add something
+In this section, 
 
 ## 1. Environment
-
-Add something
+Here, the used...
+- OS: macOS
+- Editor:VS Code
+- 
+- The version of Node v20.17.0
+- The version of Node 10.8.2
 
 ## 2. Backend
 
