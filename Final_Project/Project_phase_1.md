@@ -96,8 +96,8 @@ The *"Maku"* means "flavor" in Finnish, and *note* comes from the idea of collec
 
 **Process:**
 - The user is greeted with a login screen asking for their name.
-- They enter their name (e.g., “Aki”) and click **“Start Cooking!”**.
-- The app saves the name in `localStorage`, so they will not need to re-enter it on their next visit.
+- They enter their name (e.g., “Aki”) and click “Start Cooking!”.
+- The homepage is visible for the user.
 
 **Outcome:**  
 The user can successfully start using the application.
@@ -110,7 +110,7 @@ The user can successfully start using the application.
 
 **Process:**
 - The user opens the app and immediately sees a grid of recipe cards on the homepage.
-- Each card shows a title and preview of the recipe.
+- Each card shows a name and picture of the recipe.
 - Curious about one, the user clicks on a card.
 - The user is taken to a detail page showing the full title, list of ingredients, and step-by-step instructions.
 
