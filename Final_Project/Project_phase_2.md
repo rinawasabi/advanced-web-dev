@@ -2,12 +2,15 @@
 In this section, 
 
 ## 1. Environment
-Here, the used...
-- OS: macOS
-- Editor:VS Code
-- 
-- The version of Node v20.17.0
-- The version of Node 10.8.2
+
+The following development environment was used to implement the Makunote web application:
+
+- **Operating System**: macOS (Sonoma)
+- **Code Editor**: Visual Studio Code
+- **Frontend Framework**: React (via Create React App)
+- **Backend Platform**: Node.js with Express (version v20.17.0)
+- **Package Manager**: npm (version 10.8.2)
+- **Browser**: Google Chrome (for testing)
 
 ## 2. Backend
 
@@ -15,7 +18,8 @@ Add something
 
 ## 3. Frontend
 
-Add something
+- **Styling Framework**: Bootstrap
+
 
 ## 4. Database
 
@@ -31,7 +35,7 @@ Add something
 
 ## 7. Code quality and documentation
 
-Add something
+The code hierarchy was like App.js is the parent and from there, pages and components were ...
 
 ## 8. Testing and error handling
 
@@ -39,4 +43,5 @@ Add something
 
 ## 9. User interface and interaction
 
-Add something
+Focused on clear and user-friendly UI and UX. As discribed by user persona, some of the users preferred more simple ui...
+The color contrust was measred also using ... to ensure the 
