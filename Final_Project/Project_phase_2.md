@@ -13,17 +13,26 @@ The following development environment was used to implement the Makunote web app
 - **Browser**: Google Chrome (for testing)
 
 ## 2. Backend
-
-Add something
+---For now---
+A basic Express server was set up and runs on port 3001.
+A route GET /api/recipes was implemented to fetch recipe data.
 
 ## 3. Frontend
 
-- **Styling Framework**: Bootstrap
+- **Styling Framework**: Bootstrap via React-Bootstrap components.
 
+for now
+- **Page Structure**: Includes Home page, All Recipes view, and My Recipes view.
+Implemented responsive layout using Bootstrap's grid system (<Row>, <Col>).
+A tab-like view switch between All Recipes and My Recipes was implemented.
 
 ## 4. Database
 
-Add something
+- Database Platform: PostgreSQL, hosted on Microsoft Azure.
+Recipe table schema includes: id, title, image, ingredients, instructions, userAdded, and userId.
+
+
+
 
 ## 5. Basic structure and architecture
 
@@ -43,5 +52,6 @@ Add something
 
 ## 9. User interface and interaction
 
-Focused on clear and user-friendly UI and UX. As discribed by user persona, some of the users preferred more simple ui...
-The color contrust was measred also using ... to ensure the 
+- Focused on clear and user-friendly UI and UX. As described in the user personas, simplicity was prioritized for casual and busy users.
+- Layout is clean, with intuitive card-based recipe display.
+- Color contrast and accessibility are being considered (plan to use tools like Lighthouse for audits).
