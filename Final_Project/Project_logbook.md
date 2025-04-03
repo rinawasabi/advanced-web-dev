@@ -11,6 +11,11 @@
 | 31.3.2025 | 2 | Planning the phase 1  | Making the Prototype |
 | 31.3.2025 | 1 | Planning the phase 1  | Polishing the Plan |
 | 1.4.2025 | 2 | Planning the phase 1  | Polishing the Plan |
-| 1.4.2025 | 2.5 | Planning the phase 2  | Setting up the environment |
-| 1.4.2025 | 1 | Planning the phase 2  | Creating the Homepage |
-| 2.4.2025 | 1 | Planning the phase 2  | Creating the Add Recipe page (frontend) |
+| 1.4.2025 | 2.5 | Implementing the phase 2  | Setting up the environment |
+| 1.4.2025 | 1 | Implementing the phase 2  | Creating the Homepage |
+| 2.4.2025 | 1 | Implementing the phase 2  | Creating the Add Recipe page (frontend) |
+| 3.4.2025 | 1 | Implementing the phase 2  | Connecting the Azure PostgreSQL with Node.js (backend) |
+| 3.4.2025 | 1.5 | Implementing the phase 2  | Setting the table for the database with pgAdmin |
+| 4.4.2025 | 1 | Implementing the phase 2  |  |
+
+
