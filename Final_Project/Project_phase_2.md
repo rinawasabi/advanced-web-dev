@@ -55,3 +55,14 @@ Add something
 - Focused on clear and user-friendly UI and UX. As described in the user personas, simplicity was prioritized for casual and busy users.
 - Layout is clean, with intuitive card-based recipe display.
 - Color contrast and accessibility are being considered (plan to use tools like Lighthouse for audits).
+- **Design theme**: The UI follows a warm and casual style, using soft background tones like `#f6f0e8` (a creamy beige) to reduce visual strain and create a cozy atmosphere.
+- **Typography**: Readable and friendly fonts were selected (e.g., Quicksand or Nunito), helping to create an approachable feel for users of all ages.
+- **Layout**: Cards and sections are consistently spaced with large touch targets for clarity and mobile-friendliness. Recipe cards are displayed in a clean grid, with images and titles centered for balance.
+
+### Login UX
+
+Special care was taken in designing the login page to ensure a smooth and welcoming user experience:
+- Users are greeted by a large, centered logo to establish the brand image.
+- Pressing **Enter** also triggers login, supporting keyboard-friendly navigation.
+- Error feedback is shown instantly if the name field is left empty, improving clarity.
+- A visually styled button with hover effects makes interaction feel responsive and enjoyable.
