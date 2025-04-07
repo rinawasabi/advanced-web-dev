@@ -30,13 +30,14 @@ A tab-like view switch between All Recipes and My Recipes was implemented.
 
 - Database Platform: PostgreSQL, hosted on Microsoft Azure.
 Recipe table schema includes: id, title, image, ingredients, instructions, userAdded, and userId.
+Table schema was edited with pgAdmin 4. 
 
 
 
+## 5. Basic structure and architecture 
+The architecture follows a classic separation of concerns between frontend, backend, and database layers.<br />
 
-## 5. Basic structure and architecture
-
-Add something
+Frontend: Built with React, using functional components and hooks. Components are modularly separated into pages/ and components/ directories.
 
 ## 6. Functionalities
 
