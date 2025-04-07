@@ -2,9 +2,7 @@
 In this section, 
 
 ## 1. Environment
-
-The following development environment was used to implement the Makunote web application:
-
+The following development environment was used to implement the Makunote web application.
 - **Operating System**: macOS (Sonoma)
 - **Code Editor**: Visual Studio Code
 - **Frontend Framework**: React (via Create React App)
@@ -29,27 +27,50 @@ A tab-like view switch between All Recipes and My Recipes was implemented.
 ## 4. Database
 
 - Database Platform: PostgreSQL, hosted on Microsoft Azure.
-Recipe table schema includes: id, title, image, ingredients, instructions, userAdded, and userId.
-Table schema was edited with pgAdmin 4. 
+Recipe table schema includes: id, title, image, ingredients, instructions, userAdded, and userId. Table schema was edited with pgAdmin 4. 
 
 
 
 ## 5. Basic structure and architecture 
-The architecture follows a classic separation of concerns between frontend, backend, and database layers.<br />
-
+The architecture follows a classic separation of concerns between frontend, backend, and database layers.  
+The directory structure is organized to keep pages, components, and styles modular and maintainable.<br />
 Frontend: Built with React, using functional components and hooks. Components are modularly separated into pages/ and components/ directories.
 
-## 6. Functionalities
+<pre> <code> 
+  ``` 
+  src/
+  ├── components/     # Reusable UI components (e.g., RecipeCard)
+  ├── pages/          # View-level components (e.g., AddRecipe, RecipeDetail)
+  ├── styles/         # Custom CSS files
+  ├── App.js          # Top-level layout and routing
+  └── index.js        # Entry point of the React app
+  ``` </code> </pre>
 
-Add something
+## 6. Functionalities
+Based on the planned use cases, the functionalities below were implemented.
+- **Login via localStorage**: A basic user login is simulated by storing a username and ID in localStorage.
+- **View all recipes**: All recipes from the database are shown as responsive cards.
+- **Recipe detail view**: Recipes can be opened in a detailed view showing full ingredients and instructions.
+- **View my recipes**: Logged-in users can view only the recipes they have submitted.
+- **Add a recipe**: A structured form allows users to input title, image URL, ingredients, and instructions. Required fields are validated.
+- **Delete recipe**: If the recipe was added by the user, a "Delete this recipe" button appears. SweetAlert2 is used to show a confirmation popup.
+- **Search a recipe**: ...
 
 ## 7. Code quality and documentation
 
-The code hierarchy was like App.js is the parent and from there, pages and components were ...
+- Components are written with a clear structure with comments in each block.
+- File naming is consistent and descriptive.
+- The component hierarchy flows from `App.js` (top-level) into `pages/` and `components/`, making the routing and data flow easy to trace.
+- Project is version-controlled using Git and published to GitHub.
+- Common concerns such as navigation, state lifting, and user interactions are kept separate and clearly organized.
+
 
 ## 8. Testing and error handling
 
-Add something
+- **Error handling**: Basic `try/catch` blocks and `.catch()` handlers are used for `fetch` requests. Error logs are shown in the console.
+- **Form validation**: The recipe form uses HTML `required` attributes and simple logic to prevent empty submissions.
+- **User feedback**: SweetAlert2 provides a friendly confirmation popup for deletions. Error messages will be enhanced in future phases.NOT YET
+- **Planned testing tools**: In future phases, unit testing (Vitest) and end-to-end testing (Playwright or Cypress) are planned. Load testing with k6 is also being considered.
 
 ## 9. User interface and interaction
 
