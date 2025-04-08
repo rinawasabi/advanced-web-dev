@@ -19,6 +19,8 @@
 | 6.4.2025 | 2 | Implementing the phase 2  | Modeling the Login page |
 | 7.4.2025 | 2 | Implementing the phase 2  | Modeling the Recipe cards and add recipe form |  
 | 7.4.2025 | 1 | Implementing the phase 2  | Adding the deleting function |  12h
-| 7.4.2025 | 1 | Implementing the phase 2  | Implemementing UI of recipe detail page |  12h
+| 7.4.2025 | 1 | Implementing the phase 2  | Implemementing UI of recipe detail page |
+| 8.4.2025 | 1 | Implementing the phase 2  | Trobleshooting the error of Azure db |  13h
+| 8.4.2025 | 1 | Implementing the phase 2  |  |
 
 
