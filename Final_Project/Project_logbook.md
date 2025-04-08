@@ -18,9 +18,9 @@
 | 3.4.2025 | 1.5 | Implementing the phase 2  | Setting the table for the database with pgAdmin |
 | 6.4.2025 | 2 | Implementing the phase 2  | Modeling the Login page |
 | 7.4.2025 | 2 | Implementing the phase 2  | Modeling the Recipe cards and add recipe form |  
-| 7.4.2025 | 1 | Implementing the phase 2  | Adding the deleting function |  12h
+| 7.4.2025 | 1 | Implementing the phase 2  | Adding the deleting function |
 | 7.4.2025 | 1 | Implementing the phase 2  | Implemementing UI of recipe detail page |
-| 8.4.2025 | 1 | Implementing the phase 2  | Trobleshooting the error of Azure db |  13h
-| 8.4.2025 | 1 | Implementing the phase 2  |  |
+| 8.4.2025 | 1 | Implementing the phase 2  | Trobleshooting the error of Azure db |  
+| 8.4.2025 | 2.5 | Implementing the phase 2  | Implementing search function and enhancing the home page |15.5h
 
 
