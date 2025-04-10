@@ -21,6 +21,6 @@
 | 7.4.2025 | 1 | Implementing the phase 2  | Adding the deleting function |
 | 7.4.2025 | 1 | Implementing the phase 2  | Implemementing UI of recipe detail page |
 | 8.4.2025 | 1 | Implementing the phase 2  | Trobleshooting the error of Azure db |  
-| 8.4.2025 | 2.5 | Implementing the phase 2  | Implementing search function and enhancing the home page |15.5h
-
+| 8.4.2025 | 2.5 | Implementing the phase 2  | Implementing the search function and enhancing the home page |
+| 10.4.2025 | 2 | Implementing the phase 2  | Implementing the edit function |17.5h
 
