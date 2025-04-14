@@ -25,5 +25,5 @@
 | 10.4.2025 | 2 | Implementing the phase 2  | Implementing the edit function |
 | 13.4.2025 | 2 | Implementing the phase 2  | Debugging My Recipe function |
 | 13.4.2025 | 1 | Implementing the phase 2  | Organzing the code |
-| 14.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub |22.5h
-| 1.4.2025 |  | Implementing the phase 2  |  |
+| 14.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub |
+| 1.4.2025 | 1.5 | Implementing the phase 2  | Organzing the code continued | 24h
