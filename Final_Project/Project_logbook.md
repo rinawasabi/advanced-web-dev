@@ -22,6 +22,8 @@
 | 7.4.2025 | 1 | Implementing the phase 2  | Implemementing UI of recipe detail page |
 | 8.4.2025 | 1 | Implementing the phase 2  | Trobleshooting the error of Azure db |  
 | 8.4.2025 | 2.5 | Implementing the phase 2  | Implementing the search function and enhancing the home page |
-| 10.4.2025 | 2 | Implementing the phase 2  | Implementing the edit function |17.5h
-| 13.4.2025 | 2 | Implementing the phase 2  | Debugging My Recipe function |19.5h
-| 13.4.2025 | 2 | Implementing the phase 2  |  |19.5h
+| 10.4.2025 | 2 | Implementing the phase 2  | Implementing the edit function |
+| 13.4.2025 | 2 | Implementing the phase 2  | Debugging My Recipe function |
+| 13.4.2025 | 1 | Implementing the phase 2  | Organzing the code |
+| 14.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub |22.5h
+| 1.4.2025 |  | Implementing the phase 2  |  |
