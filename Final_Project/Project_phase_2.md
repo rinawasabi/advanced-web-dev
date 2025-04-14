@@ -115,21 +115,23 @@ Based on the planned use cases, the functionalities below were implemented.
 - **Error handling**: Basic `try/catch` blocks and `.catch()` handlers are used for `fetch` requests. Error logs are shown in the console.
 - **Form validation**: The recipe form uses HTML `required` attributes and simple logic to prevent empty submissions.
 - **User feedback**: SweetAlert2 provides a friendly confirmation popup for deletions. Error messages will be enhanced in future phases.NOT YET
-- **Planned testing tools**: In future phases, unit testing (Vitest) and end-to-end testing (Playwright or Cypress) are planned. Load testing with k6 is also being considered.
+- **Testing tools**: Unit testing (Vitest) and end-to-end testing (Playwright), and load testing with k6 were implemented. Although automated testing tools like Vitest and Playwright are planned for later phases, all key functionalities were manually tested during development, and debugging was performed accordingly.
 
-## 9. User interface and interaction
+
+## 9. User interface and interaction (UI/UX)
 
 - Focused on clear and user-friendly UI and UX. As described in the user personas, simplicity was prioritized for casual and busy users.
 - Layout is clean, with intuitive card-based recipe display.
 - Color contrast and accessibility are being considered (plan to use tools like Lighthouse for audits).
 - **Design theme**: The UI follows a warm and casual style, using soft background tones like `#f6f0e8` (a creamy beige) to reduce visual strain and create a cozy atmosphere.
-- **Typography**: Readable and friendly fonts were selected (e.g., Quicksand or Nunito), helping to create an approachable feel for users of all ages.
+- **Typography**: Readable and friendly fonts were selected (Quicksand and Poppins), helping to create an approachable feel for users of all ages.
 - **Layout**: Cards and sections are consistently spaced with large touch targets for clarity and mobile-friendliness. Recipe cards are displayed in a clean grid, with images and titles centered for balance.
 
+Some of the points ---
 ### Login UX
-
-Special care was taken in designing the login page to ensure a smooth and welcoming user experience:
+Special care was taken in designing the login page to ensure a smooth and welcoming user experience.
 - Users are greeted by a large, centered logo to establish the brand image.
 - Pressing **Enter** also triggers login, supporting keyboard-friendly navigation.
 - Error feedback is shown instantly if the name field is left empty, improving clarity.
 - A visually styled button with hover effects makes interaction feel responsive and enjoyable.
+
