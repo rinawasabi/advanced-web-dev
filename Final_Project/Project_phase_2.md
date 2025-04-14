@@ -1,6 +1,6 @@
 # Project phase 2 - Basic structure and main functionalities
-In this section, we describe the foundational setup and core functionalities of the Makunote recipe-sharing application, implemented during Phase 2 of development.
-The goal of this phase was to implement the basic function for the application. This includes integrating the frontend, backend, and database, as well as implementing key interactions such as recipe CRUD operations.
+In this section, the foundational setup and core functionalities of the Makunote recipe-sharing application are described.
+The goal of this phase was to implement the basic function for the application. This includes integrating the frontend, backend, and database, as well as implementing key interactions such as CRUD operations.
 
 
 ## 1. Environment
@@ -15,6 +15,7 @@ The following development environment was used to implement the Makunote web app
 ## 2. Backend
 The backend was built using Node.js with the Express.js framework. It provides a RESTful API to handle recipe data stored in a PostgreSQL database.
 Implemented API Endpoints:
+
 ### Implemented API Endpoints:
 - `GET /api/recipes` – Fetches all recipes from the database.
 - `POST /api/recipes` – Adds a new recipe. Accepts data such as title, image URL, ingredients, instructions, and user info.
@@ -22,31 +23,39 @@ Implemented API Endpoints:
 - `DELETE /api/recipes/:id` – Deletes a recipe. A confirmation popup is shown before deletion.
 
 The backend uses the **pg** library for PostgreSQL connection pooling, and **CORS** is enabled for local development.
-For Phase 2, full authentication is not implemented. All user identification is based on localStorage and sent manually via request bodies.
-
+Full authentication is not implemented. All user identification is based on localStorage and sent manually via request bodies.
 
 
 ## 3. Frontend
-The frontend is built using **React** with **React-Bootstrap** for styling. Functional components and hooks like `useState`, `useEffect`, and `useNavigate` are used extensively.
 
-### Page Structure:
-- **Home page** – Displays all recipes using responsive cards.
-- **My Recipes page** – Filters and shows only the current user's recipes.
-- **Recipe Detail page** – Full view with ingredients and instructions.
-- **Add Recipe page** – A form for submitting new recipes.
-- **Edit Recipe page** – A pre-filled form for updating user's own recipe.
-- **Login page** – A minimal login screen that saves user info to localStorage.
+The frontend is built using **React** with **React-Bootstrap** and custom **CSS files** for styling. Functional components and hooks like `useState`, `useEffect`, and `useNavigate` are used to handle user interactions and data flow.
 
-### Layout Features:
-- A global **Navbar** component enables navigation between pages.
-- Routing is handled by **react-router-dom**, and route protection is simulated via simple checks.
-- Conditional rendering is used to show **Edit/Delete** buttons only when the current user matches the recipe’s creator.
+### Page Structure
+- **Home page** – Displays all recipes as responsive cards.
+- **My Recipes page** – Filters and shows only the recipes created by the current user.
+- **Recipe Detail page** – Displays a single recipe in full detail (ingredients, instructions, etc).
+- **Add Recipe page** – Contains a form to submit a new recipe.
+- **Edit Recipe page** – Shows a pre-filled form for editing your own recipe.
+- **Login page** – A simple login form that stores the user in localStorage.
 
+### Layout & Styling Features
+- A reusable **Navbar** component allows easy navigation across pages.
+- Page transitions and routing are handled using **react-router-dom**.
+- **Conditional rendering** is used to show `Edit` and `Delete` buttons only to the recipe owner.
+- The UI uses a mix of
+  - **React-Bootstrap components** (e.g., `<Container>`, `<Form>`, `<Row>`, `<Col>`)
+  - **Custom CSS files** stored under `styles/`, such as
+    - `App.css` – Global layout and typography
+    - `AddRecipe.css` – Custom styles for form layout
+    - `RecipeDetail.css` – Styling for the detailed recipe view
+    - `Navbar.css` – Custom navbar fonts and colors
+
+This combination ensures consistent, responsive design while allowing for personalized styling across different parts of the app.
 
 ## 4. Database
-The backend is connected to a PostgreSQL database hosted on Microsoft Azure.
-Recipe table schema includes: id, title, image, ingredients, instructions, userAdded, and userId. Table schema was edited with pgAdmin 4.
+The backend is connected to a **PostgreSQL** database hosted on **Microsoft Azure**. All database operations are handled via the `pg` Node.js library using **parameterized SQL queries** to prevent SQL injection.
 
+The database schema was designed and modified using **pgAdmin 4**, which also allowed running test queries and verifying data during development.
 
 ### Table Schema: `recipes`
 
@@ -60,9 +69,10 @@ Recipe table schema includes: id, title, image, ingredients, instructions, userA
 | user_added   | BOOLEAN  | Indicates if the recipe was user-made  |
 | user_id      | INTEGER  | ID of the user who added the recipe    |
 
-> Data is accessed using **parameterized SQL queries** to prevent SQL injection.
-
-
+- Recipes are fetched using SQL queries in the backend, such as `SELECT * FROM recipes ORDER BY id DESC`.
+- All data manipulation (add, edit, delete) is performed using parameterized queries like `INSERT INTO ... VALUES ($1, $2, ...)` for security.
+- Initial test data was added manually through pgAdmin for development and debugging.
+- In the future, this schema can be extended to include other features like user accounts, comments, ratings, or recipe tags.
 
 
 ## 5. Basic structure and architecture 
