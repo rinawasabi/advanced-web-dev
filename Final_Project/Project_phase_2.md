@@ -77,18 +77,20 @@ The database schema was designed and modified using **pgAdmin 4**, which also al
 
 ## 5. Basic structure and architecture 
 The architecture follows a classic separation of concerns between frontend, backend, and database layers.  
-The directory structure is organized to keep pages, components, and styles modular and maintainable.<br />
-Frontend: Built with React, using functional components and hooks. Components are modularly separated into pages/ and components/ directories.
+The directory structure is organized to keep pages, components and styles modular and maintainable. <br />
+Frontend: Components are modularly separated into pages/ and components/ directories.
 
 <pre> <code> 
   ``` 
   src/
-  ├── components/     # Reusable UI components (e.g., RecipeCard)
+  ├── components/     # Reusable UI components (RecipeCard & Navibar)
   ├── pages/          # View-level components (e.g., AddRecipe, RecipeDetail)
   ├── styles/         # Custom CSS files
   ├── App.js          # Top-level layout and routing
   └── index.js        # Entry point of the React app
   ``` </code> </pre>
+
+Backtend: 
 
 ## 6. Functionalities
 Based on the planned use cases, the functionalities below were implemented.
@@ -122,12 +124,12 @@ Based on the planned use cases, the functionalities below were implemented.
 
 - Focused on clear and user-friendly UI and UX. As described in the user personas, simplicity was prioritized for casual and busy users.
 - Layout is clean, with intuitive card-based recipe display.
-- Color contrast and accessibility are being considered (plan to use tools like Lighthouse for audits).
+- Color contrast and accessibility are being considered.
 - **Design theme**: The UI follows a warm and casual style, using soft background tones like `#f6f0e8` (a creamy beige) to reduce visual strain and create a cozy atmosphere.
 - **Typography**: Readable and friendly fonts were selected (Quicksand and Poppins), helping to create an approachable feel for users of all ages.
 - **Layout**: Cards and sections are consistently spaced with large touch targets for clarity and mobile-friendliness. Recipe cards are displayed in a clean grid, with images and titles centered for balance.
 
-Some of the points ---
+Some of the focused points are mentioned below.
 ### Login UX
 Special care was taken in designing the login page to ensure a smooth and welcoming user experience.
 - Users are greeted by a large, centered logo to establish the brand image.
