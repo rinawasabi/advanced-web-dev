@@ -14,7 +14,6 @@ The following development environment was used to implement the Makunote web app
 
 ## 2. Backend
 The backend was built using Node.js with the Express.js framework. It provides a RESTful API to handle recipe data stored in a PostgreSQL database.
-Implemented API Endpoints:
 
 ### Implemented API Endpoints:
 - `GET /api/recipes` – Fetches all recipes from the database.
@@ -78,7 +77,8 @@ The database schema was designed and modified using **pgAdmin 4**, which also al
 ## 5. Basic structure and architecture 
 The architecture follows a classic separation of concerns between frontend, backend, and database layers.  
 The directory structure is organized to keep pages, components and styles modular and maintainable. <br />
-Frontend: Components are modularly separated into pages/ and components/ directories.
+### Frontend folder
+Components are modularly separated into pages/ and components/ directories.
 
 <pre> <code> 
   ``` 
@@ -90,7 +90,8 @@ Frontend: Components are modularly separated into pages/ and components/ directo
   └── index.js        # Entry point of the React app
   ``` </code> </pre>
 
-Backtend: 
+### Backtend folder
+
 
 ## 6. Functionalities
 Based on the planned use cases, the functionalities below were implemented.
