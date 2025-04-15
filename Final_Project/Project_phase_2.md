@@ -5,17 +5,16 @@ The goal of this phase was to implement the basic function for the application. 
 
 ## 1. Environment
 The following development environment was used to implement the Makunote web application.
-- **Operating System**: macOS (Sonoma)
-- **Code Editor**: Visual Studio Code
 - **Frontend Framework**: React (via Create React App)
 - **Backend Platform**: Node.js with Express (version v20.17.0)
+- **Database**: PostgreSQL
+- **Hosting / Deployment**: Entire application is hosted on Microsoft Azure
 - **Package Manager**: npm (version 10.8.2)
-- **Browser**: Google Chrome (for testing)
 
 ## 2. Backend
 The backend was built using Node.js with the Express.js framework. It provides a RESTful API to handle recipe data stored in a PostgreSQL database.
 
-### Implemented API Endpoints:
+### Implemented API Endpoints
 - `GET /api/recipes` – Fetches all recipes from the database.
 - `POST /api/recipes` – Adds a new recipe. Accepts data such as title, image URL, ingredients, instructions, and user info.
 - `PUT /api/recipes/:id` – Updates an existing recipe. Only accessible from the frontend if the user is the owner.
@@ -26,7 +25,6 @@ Full authentication is not implemented. All user identification is based on loca
 
 
 ## 3. Frontend
-
 The frontend is built using **React** with **React-Bootstrap** and custom **CSS files** for styling. Functional components and hooks like `useState`, `useEffect`, and `useNavigate` are used to handle user interactions and data flow.
 
 ### Page Structure
@@ -132,9 +130,10 @@ Based on the planned use cases, the functionalities below were implemented.
 
 Some of the focused points are mentioned below.
 ### Login UX
-Special care was taken in designing the login page to ensure a smooth and welcoming user experience.
 - Users are greeted by a large, centered logo to establish the brand image.
 - Pressing **Enter** also triggers login, supporting keyboard-friendly navigation.
 - Error feedback is shown instantly if the name field is left empty, improving clarity.
 - A visually styled button with hover effects makes interaction feel responsive and enjoyable.
+
+### Homepage UI
 
