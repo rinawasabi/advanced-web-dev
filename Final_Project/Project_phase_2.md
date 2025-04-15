@@ -50,7 +50,7 @@ The frontend is built using **React** with **React-Bootstrap** and custom **CSS 
 This combination ensures consistent, responsive design while allowing for personalized styling across different parts of the app.
 
 ## 4. Database
-The backend is connected to a **PostgreSQL** database hosted on **Microsoft Azure**. All database operations are handled via the `pg` Node.js library using **parameterized SQL queries** to prevent SQL injection.
+The backend is connected to a **PostgreSQL** database hosted on **Microsoft Azure**. All database operations are handled via the `pg` Node.js library using parameterized SQL queries to prevent SQL injection.
 
 The database schema was designed and modified using **pgAdmin 4**, which also allowed running test queries and verifying data during development.
 
@@ -79,16 +79,27 @@ The directory structure is organized to keep pages, components and styles modula
 Components are modularly separated into pages/ and components/ directories.
 
 <pre> <code> 
-  ``` 
+``` 
   src/
   ├── components/     # Reusable UI components (RecipeCard & Navibar)
   ├── pages/          # View-level components (e.g., AddRecipe, RecipeDetail)
   ├── styles/         # Custom CSS files
   ├── App.js          # Top-level layout and routing
   └── index.js        # Entry point of the React app
-  ``` </code> </pre>
+``` </code> </pre>
 
-### Backtend folder
+### Backend folder  
+Backend is structured to separate the database configuration and API logic.
+The backend uses Express.js to serve RESTful routes and connects to a PostgreSQL database via `pg`. 
+All recipe-related API endpoints (GET, POST, PUT, DELETE) are defined in `server.js`.
+
+<pre> <code> 
+``` 
+backend/
+├── db.js # PostgreSQL connection setup using pg
+├── server.js # Main Express server and route definitions
+└── package.json # Backend dependencies and scripts
+``` </code> </pre>
 
 
 ## 6. Functionalities
@@ -116,7 +127,7 @@ Based on the planned use cases, the functionalities below were implemented.
 - **Error handling**: Basic `try/catch` blocks and `.catch()` handlers are used for `fetch` requests. Error logs are shown in the console.
 - **Form validation**: The recipe form uses HTML `required` attributes and simple logic to prevent empty submissions.
 - **User feedback**: SweetAlert2 provides a friendly confirmation popup for deletions. Error messages will be enhanced in future phases.NOT YET
-- **Testing tools**: Unit testing (Vitest) and end-to-end testing (Playwright), and load testing with k6 were implemented. Although automated testing tools like Vitest and Playwright are planned for later phases, all key functionalities were manually tested during development, and debugging was performed accordingly.
+- **Testing tools**: Unit testing (Vitest) and end-to-end testing (Playwright), and load testing with k6 were implemented. In addition to automated testing tools all key functionalities were manually tested during development, and debugging was performed accordingly.
 
 
 ## 9. User interface and interaction (UI/UX)
