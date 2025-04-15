@@ -26,4 +26,6 @@
 | 13.4.2025 | 2 | Implementing the phase 2  | Debugging My Recipe function |
 | 13.4.2025 | 1 | Implementing the phase 2  | Organzing the code |
 | 14.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub |
-| 1.4.2025 | 1.5 | Implementing the phase 2  | Organzing the code continued | 24h
+| 14.4.2025 | 1.5 | Implementing the phase 2  | Organzing the code continued |
+| 15.4.2025 | 1 | Implementing the phase 2  | Implementing footer | 
+| 15.4.2025 | 1 | Implementing the phase 2  | Documentation on GitHub | 26h
