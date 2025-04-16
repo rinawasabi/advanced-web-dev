@@ -28,12 +28,14 @@ Full authentication is not implemented. All user identification is based on loca
 The frontend is built using **React** with **React-Bootstrap** and custom **CSS files** for styling. Functional components and hooks like `useState`, `useEffect`, and `useNavigate` are used to handle user interactions and data flow.
 
 ### Page Structure
+- **Login page** – A simple login form that stores the user in localStorage.
 - **Home page** – Displays all recipes as responsive cards.
 - **My Recipes page** – Filters and shows only the recipes created by the current user.
 - **Recipe Detail page** – Displays a single recipe in full detail (ingredients, instructions, etc).
 - **Add Recipe page** – Contains a form to submit a new recipe.
 - **Edit Recipe page** – Shows a pre-filled form for editing your own recipe.
-- **Login page** – A simple login form that stores the user in localStorage.
+- **About page** – Introduces the Makunote application.
+
 
 ### Layout & Styling Features
 - A reusable **Navbar** component allows easy navigation across pages.
@@ -68,7 +70,6 @@ The database schema was designed and modified using **pgAdmin 4**, which also al
 
 - Recipes are fetched using SQL queries in the backend, such as `SELECT * FROM recipes ORDER BY id DESC`.
 - All data manipulation (add, edit, delete) is performed using parameterized queries like `INSERT INTO ... VALUES ($1, $2, ...)` for security.
-- Initial test data was added manually through pgAdmin for development and debugging.
 - In the future, this schema can be extended to include other features like user accounts, comments, ratings, or recipe tags.
 
 
@@ -96,29 +97,29 @@ All recipe-related API endpoints (GET, POST, PUT, DELETE) are defined in `server
 <pre> <code> 
 ``` 
 backend/
-├── db.js # PostgreSQL connection setup using pg
-├── server.js # Main Express server and route definitions
-└── package.json # Backend dependencies and scripts
+├── db.js           # PostgreSQL connection setup using pg
+├── server.js       # Main Express server and route definitions
+└── package.json    # Backend dependencies and scripts
 ``` </code> </pre>
 
 
 ## 6. Functionalities
-Based on the planned use cases, the functionalities below were implemented.
+Based on the 5 planned use cases, the functionalities below were implemented.
+1. **Login via localStorage**: A basic user login is simulated by storing a username and ID in localStorage.
+2. **View recipes**:
+   - **Recipe list**: All recipes from the database are shown as responsive cards.
+   - **Recipe detail view**: Recipes can be opened in a detailed view showing full ingredients and instructions.
+3. **Filter my recipes**: Logged-in users can view only the recipes they have submitted.
+4. **Edit a recipe**:
+   - **Edit**: A structured form allows users to input title, image URL, ingredients, and instructions.
+   - **Delete**: Required fields are validated.If the recipe was added by the user, a "Delete this recipe" button appears. SweetAlert2 is used to show a confirmation popup.
+5.  **Search a recipe**: A search bar on the homepage filters recipes by title or ingredients.
 
-- **Login via localStorage**: A basic user login is simulated by storing a username and ID in localStorage.
-- **View all recipes**: All recipes from the database are shown as responsive cards.
-- **Recipe detail view**: Recipes can be opened in a detailed view showing full ingredients and instructions.
-- **View my recipes**: Logged-in users can view only the recipes they have submitted.
-- **Add a recipe**: A structured form allows users to input title, image URL, ingredients, and instructions. Required fields are validated.
-- **Delete recipe**: If the recipe was added by the user, a "Delete this recipe" button appears. SweetAlert2 is used to show a confirmation popup.
-- **Search a recipe**: (Planned) A search bar will be implemented to filter recipes by title or ingredients.
 
 ## 7. Code quality and documentation
-
 - Components are written with a clear structure with comments in each block.
 - File naming is consistent and descriptive.
 - The component hierarchy flows from `App.js` (top-level) into `pages/` and `components/`, making the routing and data flow easy to trace.
-- Project is version-controlled using Git and published to GitHub.
 - Common concerns such as navigation, state lifting, and user interactions are kept separate and clearly organized.
 
 
@@ -131,20 +132,18 @@ Based on the planned use cases, the functionalities below were implemented.
 
 
 ## 9. User interface and interaction (UI/UX)
+Some of the points are focused.
+### UI
+- **Design theme**: A warm and casual style, using soft background tones like a creamy beige to reduce visual strain and create a cozy atmosphere. Simplicity was prioritized for casual and busy users.
+- **Responsive layout**: Layout adjusts fluidly for mobile, tablet, and desktop users.
+- **Form design**: Clearly structured fields with labels, spacing, and visual cues for required inputs.
+- **Color palette**: Warm and inviting tones (e.g., #f6f0e8 background) promote comfort and readability. Color contrast and accessibility are being considered.
+- **Typography**: Uses Quicksand and Poppins for a friendly, modern aesthetic.
+- **Recipe cards**: Consistent card-based layout with hover effect and fallback image if no URL is provided.
 
-- Focused on clear and user-friendly UI and UX. As described in the user personas, simplicity was prioritized for casual and busy users.
-- Layout is clean, with intuitive card-based recipe display.
-- Color contrast and accessibility are being considered.
-- **Design theme**: The UI follows a warm and casual style, using soft background tones like `#f6f0e8` (a creamy beige) to reduce visual strain and create a cozy atmosphere.
-- **Typography**: Readable and friendly fonts were selected (Quicksand and Poppins), helping to create an approachable feel for users of all ages.
-- **Layout**: Cards and sections are consistently spaced with large touch targets for clarity and mobile-friendliness. Recipe cards are displayed in a clean grid, with images and titles centered for balance.
-
-Some of the focused points are mentioned below.
-### Login UX
-- Users are greeted by a large, centered logo to establish the brand image.
-- Pressing **Enter** also triggers login, supporting keyboard-friendly navigation.
-- Error feedback is shown instantly if the name field is left empty, improving clarity.
-- A visually styled button with hover effects makes interaction feel responsive and enjoyable.
-
-### Homepage UI
-
+### UX
+- **Keyboard support**: Pressing **Enter** also triggers login, supporting keyboard-friendly navigation.
+- **Instant error feedback**: Error messages appear immediately if the field is left empty, improving clarity.
+- **Button interaction**: A visually styled button with hover effects makes interaction feel responsive and enjoyable.
+- **Logo navigation**: Clicking the logo navigates back to the home page for quick access.
+- **Conditional action buttons**: "Edit" and "Delete" options only appear for recipes created by the logged-in user, avoiding confusion.
