@@ -31,4 +31,5 @@
 | 15.4.2025 | 1 | Implementing the phase 2  | Documentation on GitHub |
 | 15.4.2025 | 1 | Implementing the phase 2  | Debugging the login system |
 | 16.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 
-| 16.4.2025 | 1 | Implementing the phase 2  | Implementing confirmation message function | 30h
+| 16.4.2025 | 1 | Implementing the phase 2  | Implementing confirmation message function | 
+| 16.4.2025 | 1 | Implementing the phase 2  | DEbugging the footer | 31h
