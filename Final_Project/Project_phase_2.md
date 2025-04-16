@@ -142,7 +142,7 @@ Some of the points are focused.
 - **Recipe cards**: Consistent card-based layout with hover effect and fallback image if no URL is provided.
 
 ### UX
-- **Keyboard support**: Pressing **Enter** also triggers login, supporting keyboard-friendly navigation.
+- **Keyboard support**: Pressing Enter also triggers login, supporting keyboard-friendly navigation.
 - **Instant error feedback**: Error messages appear immediately if the field is left empty, improving clarity.
 - **Button interaction**: A visually styled button with hover effects makes interaction feel responsive and enjoyable.
 - **Logo navigation**: Clicking the logo navigates back to the home page for quick access.
