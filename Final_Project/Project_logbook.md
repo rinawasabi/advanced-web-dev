@@ -33,3 +33,4 @@
 | 16.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 
 | 16.4.2025 | 1 | Implementing the phase 2  | Implementing confirmation message function | 
 | 16.4.2025 | 1.5 | Implementing the phase 2  | Debugging the footer | 31.5h
+| 18.4.2025 | 1 | Implementing the phase 2  | Enhancing the About page | 32.5h
