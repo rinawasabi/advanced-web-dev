@@ -126,11 +126,20 @@ Based on the 5 planned use cases, the functionalities below were implemented.
 The application was tested using three approaches to ensure quality and reliability.
 ### Unit Testing 
 - **Tool**: Vitest
-- **Scope**: Frontend logic such as filtering, form validation.
-- **Example**:
-  - `filterRecipes()` function was tested to ensure it filters by title or ingredients.
-- **Location**: `src/tests/filterRecipes.test.js`
-
+- Not all the unit tests were implemented - search, form validation, and data transformation were prioritized in this phase.
+1. `filterRecipes()` - Filters recipes based on title or ingredients.
+2. `validateRecipe()` - Ensures recipe inputs (title, ingredients, instructions) are not empty.
+3. `convertRecipeKeys()` - Converts backend snake_case keys to frontend camelCase format.
+These tests are located under `src/tests/`.
+- **Test results**
+<pre> <code> 
+``` 
+  Test Files  3 passed (3)
+      Tests  7 passed (7)
+   Start at  12:22:15
+   Duration  150ms
+``` </code> </pre>
+  
 ### End-to-End Testing
 - **Tool**: Playwright
 - **Scope**: User flow testing – logging in, adding a recipe, viewing detail, editing, and deleting.
