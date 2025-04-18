@@ -30,7 +30,7 @@ function RecipeDetail({ recipes, setRecipes }) {
       background: '#fffaf0', 
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3001/api/recipes/${id}`, {
+        fetch(`https://makunote-backend-rina.azurewebsites.net/api/recipes/${id}`, {
           method: "DELETE",
         })
           .then((res) => {

@@ -12,7 +12,7 @@ function MyRecipes() {
   useEffect(() => {
     const fetchMyRecipes = async () => {
       try {
-        const res = await fetch("http://localhost:3001/api/recipes");
+        const res = await fetch("https://makunote-backend-rina.azurewebsites.net/api/recipes");
         const data = await res.json();
         const filtered = data.filter(
           (recipe) => recipe.user_id === Number(currentUser?.id)

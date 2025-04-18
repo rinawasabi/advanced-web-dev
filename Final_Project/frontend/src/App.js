@@ -36,7 +36,7 @@ function App() {
 
   // Fetch all recipes from backend
   useEffect(() => {
-    fetch("http://localhost:3001/api/recipes")
+    fetch("https://makunote-backend-rina.azurewebsites.net/api/recipes")
       .then((res) => res.json())
       .then((data) => {
         // Convert snake_case from backend to camelCase for frontend

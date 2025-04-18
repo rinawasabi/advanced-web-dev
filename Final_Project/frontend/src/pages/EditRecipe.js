@@ -40,7 +40,7 @@ function EditRecipe({ recipes, setRecipes }) {
     };
 
     // Send PUT request to backend
-    fetch(`http://localhost:3001/api/recipes/${id}`, {
+    fetch(`https://makunote-backend-rina.azurewebsites.net/api/recipes/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedRecipe),
@@ -51,7 +51,7 @@ function EditRecipe({ recipes, setRecipes }) {
       })
       .then(() => {
         // Re-fetch recipes and update state
-        fetch("http://localhost:3001/api/recipes")
+        fetch("https://makunote-backend-rina.azurewebsites.net/api/recipes")
           .then((res) => res.json())
           .then((updatedRecipes) => {
             const formatted = updatedRecipes.map((r) => ({

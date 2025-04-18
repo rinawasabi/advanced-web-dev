@@ -25,14 +25,14 @@ function AddRecipe({ setRecipes }) {
       userId: currentUser?.id,
     };
 
-    fetch("http://localhost:3001/api/recipes", {
+    fetch("https://makunote-backend-rina.azurewebsites.net/api/recipes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newRecipe),
     })
       .then((res) => res.json())
       .then(() => {
-        fetch("http://localhost:3001/api/recipes")
+        fetch("https://makunote-backend-rina.azurewebsites.net/api/recipes")
           .then((res) => res.json())
           .then((updatedRecipes) => {
             const formatted = updatedRecipes.map((r) => ({
