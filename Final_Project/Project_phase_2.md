@@ -2,7 +2,6 @@
 In this section, the foundational setup and core functionalities of the Makunote recipe-sharing application are described.
 The goal of this phase was to implement the basic function for the application. This includes integrating the frontend, backend, and database, as well as implementing key interactions such as CRUD operations.
 
-
 ## 1. Environment
 The following development environment was used to implement the Makunote web application.
 - **Frontend Framework**: React (via Create React App)
@@ -23,7 +22,6 @@ The backend was built using Node.js with the Express.js framework. It provides a
 The backend uses the **pg** library for PostgreSQL connection pooling, and **CORS** is enabled for local development.
 Full authentication is not implemented. All user identification is based on localStorage and sent manually via request bodies.
 
-
 ## 3. Frontend
 The frontend is built using **React** with **React-Bootstrap** and custom **CSS files** for styling. Functional components and hooks like `useState`, `useEffect`, and `useNavigate` are used to handle user interactions and data flow.
 
@@ -35,7 +33,6 @@ The frontend is built using **React** with **React-Bootstrap** and custom **CSS 
 - **Add Recipe page** – Contains a form to submit a new recipe.
 - **Edit Recipe page** – Shows a pre-filled form for editing your own recipe.
 - **About page** – Introduces the Makunote application.
-
 
 ### Layout & Styling Features
 - A reusable **Navbar** component allows easy navigation across pages.
@@ -72,11 +69,10 @@ The database schema was designed and modified using **pgAdmin 4**, which also al
 - All data manipulation (add, edit, delete) is performed using parameterized queries like `INSERT INTO ... VALUES ($1, $2, ...)` for security.
 - In the future, this schema can be extended to include other features like user accounts, comments, ratings, or recipe tags.
 
-
 ## 5. Basic structure and architecture 
 The architecture follows a classic separation of concerns between frontend, backend, and database layers.  
 The directory structure is organized to keep pages, components and styles modular and maintainable. <br />
-### Frontend folder
+### Frontend
 Components are modularly separated into pages/ and components/ directories.
 
 <pre> <code> 
@@ -89,7 +85,7 @@ Components are modularly separated into pages/ and components/ directories.
   └── index.js        # Entry point of the React app
 ``` </code> </pre>
 
-### Backend folder  
+### Backend  
 Backend is structured to separate the database configuration and API logic.
 The backend uses Express.js to serve RESTful routes and connects to a PostgreSQL database via `pg`. 
 All recipe-related API endpoints (GET, POST, PUT, DELETE) are defined in `server.js`.
@@ -101,7 +97,6 @@ backend/
 ├── server.js       # Main Express server and route definitions
 └── package.json    # Backend dependencies and scripts
 ``` </code> </pre>
-
 
 ## 6. Functionalities
 Based on the 5 planned use cases, the functionalities below were implemented.
@@ -115,24 +110,43 @@ Based on the 5 planned use cases, the functionalities below were implemented.
    - **Delete**: Required fields are validated.If the recipe was added by the user, a "Delete this recipe" button appears. SweetAlert2 is used to show a confirmation popup.
 5.  **Search a recipe**: A search bar on the homepage filters recipes by title or ingredients.
 
-
 ## 7. Code quality and documentation
 - Components are written with a clear structure with comments in each block.
 - File naming is consistent and descriptive.
 - The component hierarchy flows from `App.js` (top-level) into `pages/` and `components/`, making the routing and data flow easy to trace.
 - Common concerns such as navigation, state lifting, and user interactions are kept separate and clearly organized.
 
-
 ## 8. Testing and error handling
-
 - **Error handling**: Basic `try/catch` blocks and `.catch()` handlers are used for `fetch` requests. Error logs are shown in the console.
 - **Form validation**: The recipe form uses HTML `required` attributes and simple logic to prevent empty submissions.
-- **User feedback**: SweetAlert2 provides a friendly confirmation popup for deletions. Error messages will be enhanced in future phases.NOT YET
-- **Testing tools**: Unit testing (Vitest) and end-to-end testing (Playwright), and load testing with k6 were implemented. In addition to automated testing tools all key functionalities were manually tested during development, and debugging was performed accordingly.
+- **User feedback**: SweetAlert2 provides a friendly confirmation popup for deletions.
+- **Testing tools**: Unit testing, end-to-end testing and load testing were implemented. In addition to automated testing tools, all key functionalities were manually tested during development, and debugging was performed accordingly.
+
+## 9. Testing Strategy
+The application was tested using three approaches to ensure quality and reliability.
+### Unit Testing 
+- **Tool**: Vitest
+- **Scope**: Frontend logic such as filtering, form validation.
+- **Example**:
+  - `filterRecipes()` function was tested to ensure it filters by title or ingredients.
+- **Location**: `src/tests/filterRecipes.test.js`
+
+### End-to-End Testing
+- **Tool**: Playwright
+- **Scope**: User flow testing – logging in, adding a recipe, viewing detail, editing, and deleting.
+- **Test Ideas**:
+A user can successfully log in with a name.
+A recipe can be added with all required fields.
+Deletion shows a confirmation popup and removes the item.
+
+### Load Testing
+- **Tool**: k6
+- **aaa**: Test /api/recipes endpoints under load (GET, POST, DELETE).
 
 
-## 9. User interface and interaction (UI/UX)
-Some of the points are focused.
+
+## 10. User interface and interaction (UI/UX)
+Some of the points that are focused are shown below.
 ### UI
 - **Design theme**: A warm and casual style, using soft background tones like a creamy beige to reduce visual strain and create a cozy atmosphere. Simplicity was prioritized for casual and busy users.
 - **Responsive layout**: Layout adjusts fluidly for mobile, tablet, and desktop users.
