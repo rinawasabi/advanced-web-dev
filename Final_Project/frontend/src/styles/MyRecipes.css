@@ -1,0 +1,9 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 700;
+  }
+
+  .my-recipes-title {
+    margin-top: 0.5rem;
+  }
+  

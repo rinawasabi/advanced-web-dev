@@ -1,0 +1,89 @@
+.add-recipe-container {
+    max-width: 600px !important;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.add-recipe-container h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-label {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 24px;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: none;
+}
+
+.required-asterisk {
+    color: red;
+    margin-left: 4px;
+}
+
+.ingredients-textarea {
+    min-height: 120px !important;
+}
+
+.instructions-textarea {
+    min-height: 200px !important;
+}
+
+::placeholder {
+    color: #999 !important;
+    opacity: 1;
+    font-style: italic;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.btn-submit {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-submit:hover {
+    background-color: #ea580c;
+}
+
+.btn-cancel {
+    background-color: #e2e2e2;
+    color: #333;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-cancel:hover {
+    background-color: #d4d4d4;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #b2e2d2 !important;
+  border-color: #b2e2d2 !important;
+}

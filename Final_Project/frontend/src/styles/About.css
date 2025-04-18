@@ -1,0 +1,41 @@
+.about-description {
+  margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 400;
+  }
+
+.about-heading {
+  margin-bottom: 2rem;
+}
+
+.about-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.about-step {
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 20px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.about-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1); /* ホバーで浮き上がる */
+}
+.about-footer {
+  font-weight: bold;
+  color: #444;
+}

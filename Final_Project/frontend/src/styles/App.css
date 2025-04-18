@@ -1,0 +1,90 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f6f0e8;
+}
+
+
+.card {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.login-font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.app-container {
+  background-color: #f6f0e8;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+h1 {
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-bar {
+  max-width: 300px;
+  border-radius: 20px !important;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  transition: box-shadow 0.2s ease;
+  display: block;
+  margin-left: auto;
+  font-style: normal; 
+}
+
+.search-bar::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #b2e2d2 !important;
+  border-color: #b2e2d2 !important;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
