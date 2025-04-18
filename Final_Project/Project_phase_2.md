@@ -130,7 +130,6 @@ The application was tested using three approaches to ensure quality and reliabil
 1. `filterRecipes()` - Filters recipes based on title or ingredients.
 2. `validateRecipe()` - Ensures recipe inputs (title, ingredients, instructions) are not empty.
 3. `convertRecipeKeys()` - Converts backend snake_case keys to frontend camelCase format.
-These tests are located under `src/tests/`.
 - **Test results**
 <pre> <code> 
 ``` 
@@ -142,17 +141,28 @@ These tests are located under `src/tests/`.
   
 ### End-to-End Testing
 - **Tool**: Playwright
-- **Scope**: User flow testing – logging in, adding a recipe, viewing detail, editing, and deleting.
-- **Test Ideas**:
-A user can successfully log in with a name.
-A recipe can be added with all required fields.
-Deletion shows a confirmation popup and removes the item.
+-  Not all the unit tests were implemented  – logging in and adding a recipe were prioritized in this phase.
+1. `login.spec.js` – Verifies login flow and redirect
+2. `addRecipe.spec.js` – Verifies form submission and new recipe rendering
+- **Test results**
+<pre> <code>``` 
+✓  1 ….spec.js:3:5 › login flow works correctly (657ms)
+
+1 passed (1.3s)
+``` </code> </pre>
+
+<pre> <code>``` 
+✓  1 …5 › user can add a new recipe successfully (1.9s)
+1 passed (2.6s)
+``` </code> </pre> 
 
 ### Load Testing
 - **Tool**: k6
-- **aaa**: Test /api/recipes endpoints under load (GET, POST, DELETE).
-
-
+- Test /api/recipes endpoints under load (GET).
+<pre> <code>``` 
+running (10.3s), 00/10 VUs, 90 complete and 0 interrupted iterations
+default ✓ [================================] 10 VUs  10s
+``` </code> </pre> 
 
 ## 10. User interface and interaction (UI/UX)
 Some of the points that are focused are shown below.
