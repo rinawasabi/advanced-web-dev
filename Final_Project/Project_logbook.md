@@ -32,5 +32,6 @@
 | 15.4.2025 | 1 | Implementing the phase 2  | Debugging the login system |
 | 16.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 
 | 16.4.2025 | 1 | Implementing the phase 2  | Implementing confirmation message function | 
-| 16.4.2025 | 1.5 | Implementing the phase 2  | Debugging the footer | 31.5h
-| 18.4.2025 | 1 | Implementing the phase 2  | Enhancing the About page | 32.5h
+| 16.4.2025 | 1.5 | Implementing the phase 2  | Debugging the footer | 
+| 18.4.2025 | 1 | Implementing the phase 2  | Enhancing the About page | 
+| 18.4.2025 | 3 | Implementing the phase 2  | Testing & Writing the test reports | 35.5h
