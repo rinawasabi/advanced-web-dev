@@ -205,11 +205,11 @@ default ✓ [================================] 10 VUs  10s
 ### User Testing
 Based on the plan, user testing to evaluate the usability and functionality of the Makunote app.
 
-**Participants:**  
+**Participants**  
 - 1 classmate (tech-savvy)  
 - 2 family members (average and limited tech experience)
 
-**Tasks:**  
+**Tasks**  
 - Add a recipe  
 - View a recipe  
 - Edit a recipe  
@@ -217,16 +217,16 @@ Based on the plan, user testing to evaluate the usability and functionality of t
 - Navigate between pages  
 - Use the search bar
 
-**Key Observations:**  
+**Key Observations**  
 - Navigation was intuitive for all users  
 - One user needed help identifying required form fields  
 - All users could search, edit, and delete recipes easily
 
-**Improvement Points:**  
+**Improvement Points**  
 - Improve input validation 
 - Consider accessibility (font size, contrast)
 
-**Conclusion:**  
+**Conclusion**  
 Makunote is usable for a wide range of users. Minor UI/UX improvements were implemented after testing.
 
 ## 10. User interface and interaction (UI/UX)
