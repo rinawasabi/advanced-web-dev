@@ -104,11 +104,14 @@ Based on the 5 planned use cases, the functionalities below were implemented.
 2. **View recipes**:
    - **Recipe list**: All recipes from the database are shown as responsive cards.
    - **Recipe detail view**: Recipes can be opened in a detailed view showing full ingredients and instructions.
-3. **Filter my recipes**: Logged-in users can view only the recipes they have submitted.
-4. **Edit a recipe**:
+3. **Add a New Recipe**: Logged-in users can submit new recipes using a structured form.
+4. **Filter my recipes**: Logged-in users can view only the recipes they have submitted.
+5. **Edit a recipe**:
    - **Edit**: A structured form allows users to input title, image URL, ingredients, and instructions.
    - **Delete**: Required fields are validated.If the recipe was added by the user, a "Delete this recipe" button appears. SweetAlert2 is used to show a confirmation popup.
-5.  **Search a recipe**: A search bar on the homepage filters recipes by title or ingredients.
+
+Additionally<br />
+6.  **Search a recipe**: A search bar on the homepage filters recipes by title or ingredients.
 
 ## 7. Code quality and documentation
 - Components are written with a clear structure with comments in each block.
