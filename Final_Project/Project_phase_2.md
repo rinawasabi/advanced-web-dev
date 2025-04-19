@@ -44,7 +44,7 @@ The frontend is built using **React** with **React-Bootstrap** and custom **CSS 
     - `App.css` – Global layout and typography
     - `AddRecipe.css` – Custom styles for form layout
     - `RecipeDetail.css` – Styling for the detailed recipe view
-    - `Navbar.css` – Custom navbar fonts and colors
+    - `MyRecipe.css` – Custom fonts and colors for My Recipe page
 
 This combination ensures consistent, responsive design while allowing for personalized styling across different parts of the app.
 
@@ -115,6 +115,9 @@ Based on the 5 planned use cases, the functionalities below were implemented.
 - File naming is consistent and descriptive.
 - The component hierarchy flows from `App.js` (top-level) into `pages/` and `components/`, making the routing and data flow easy to trace.
 - Common concerns such as navigation, state lifting, and user interactions are kept separate and clearly organized.
+- File and folder naming conventions follow standard practices (PascalCase for components, kebab-case for folders).
+- Inline comments are written to explain each logic block clearly.
+- Reusable components such as `RecipeCard` and `Navbar` help keep the UI modular and maintainable.
 
 ## 8. Testing and error handling
 - **Error handling**: Basic `try/catch` blocks and `.catch()` handlers are used for `fetch` requests. Error logs are shown in the console.
