@@ -119,11 +119,23 @@ Based on the 5 planned use cases, the functionalities below were implemented.
 - Inline comments are written to explain each logic block clearly.
 - Reusable components such as `RecipeCard` and `Navbar` help keep the UI modular and maintainable.
 
-## 8. Testing and error handling
-- **Error handling**: Basic `try/catch` blocks and `.catch()` handlers are used for `fetch` requests. Error logs are shown in the console.
-- **Form validation**: The recipe form uses HTML `required` attributes and simple logic to prevent empty submissions.
-- **User feedback**: SweetAlert2 provides a friendly confirmation popup for deletions.
-- **Testing tools**: Unit testing, end-to-end testing and load testing were implemented. In addition to automated testing tools, all key functionalities were manually tested during development, and debugging was performed accordingly.
+## 8. Testing and Error Handling
+
+**Error Handling**
+- API requests are wrapped in `try/catch` or `.catch()` blocks to handle unexpected errors.
+- Errors are logged in the browser console for debugging purposes.
+- Missing or malformed inputs are prevented through form validation.
+
+**Form Validation**
+- Recipe form fields include `required` attributes.
+- Basic client-side validation ensures no empty submissions are accepted.
+
+**User Feedback** <br />
+SweetAlert2 is used to show friendly confirmation dialogs when deleting recipes. This provides a better user experience compared to default alerts.
+
+**Testing Approach** <br />
+Unit testing, end-to-end testing and load testing were implemented. In addition to automated testing tools, all key functionalities were manually tested during development, and debugging was performed accordingly.
+
 
 ## 9. Testing Strategy
 The application was tested using three approaches to ensure quality and reliability.
@@ -150,7 +162,6 @@ The application was tested using three approaches to ensure quality and reliabil
 - **Test results**
 <pre> <code>``` 
 ✓  1 ….spec.js:3:5 › login flow works correctly (657ms)
-
 1 passed (1.3s)
 ``` </code> </pre>
 
@@ -167,8 +178,35 @@ running (10.3s), 00/10 VUs, 90 complete and 0 interrupted iterations
 default ✓ [================================] 10 VUs  10s
 ``` </code> </pre> 
 
+### User Testing
+Based on the plan, user testing to evaluate the usability and functionality of the Makunote app.
+
+**Participants:**  
+- 1 classmate (tech-savvy)  
+- 2 family members (average and limited tech experience)
+
+**Tasks:**  
+- Add a recipe  
+- View a recipe  
+- Edit a recipe  
+- Delete a recipe  
+- Navigate between pages  
+- Use the search bar
+
+**Key Observations:**  
+- Navigation was intuitive for all users  
+- One user needed help identifying required form fields  
+- All users could search, edit, and delete recipes easily
+
+**Improvement Points:**  
+- Improve input validation 
+- Consider accessibility (font size, contrast)
+
+**Conclusion:**  
+Makunote is usable for a wide range of users. Minor UI/UX improvements were implemented after testing.
+
 ## 10. User interface and interaction (UI/UX)
-Some of the points that are focused are shown below.
+Some of the points that were focused are shown below.
 ### UI
 - **Design theme**: A warm and casual style, using soft background tones like a creamy beige to reduce visual strain and create a cozy atmosphere. Simplicity was prioritized for casual and busy users.
 - **Responsive layout**: Layout adjusts fluidly for mobile, tablet, and desktop users.
