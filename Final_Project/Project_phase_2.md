@@ -123,8 +123,30 @@ Based on the 5 planned use cases, the functionalities below were implemented.
 
 **Error Handling**
 - API requests are wrapped in `try/catch` or `.catch()` blocks to handle unexpected errors.
+- Example: Error handling in `MyRecipes.js`
+```js
+useEffect(() => {
+  const fetchMyRecipes = async () => {
+    try {
+      const res = await fetch("https://makunote-backend-rina.azurewebsites.net/api/recipes");
+      const data = await res.json();
+      const filtered = data.filter(
+        (recipe) => recipe.user_id === Number(currentUser?.id)
+      );
+      setMyRecipes(filtered);
+      setLoading(false);
+    } catch (err) {
+      console.error("Failed to load recipes:", err);
+      setLoading(false);
+    }
+  };
+
+  fetchMyRecipes();
+}, []);
+```
 - Errors are logged in the browser console for debugging purposes.
 - Missing or malformed inputs are prevented through form validation.
+
 
 **Form Validation**
 - Recipe form fields include `required` attributes.
@@ -146,13 +168,12 @@ The application was tested using three approaches to ensure quality and reliabil
 2. `validateRecipe()` - Ensures recipe inputs (title, ingredients, instructions) are not empty.
 3. `convertRecipeKeys()` - Converts backend snake_case keys to frontend camelCase format.
 - **Test results**
-<pre> <code> 
-``` 
+```txt
   Test Files  3 passed (3)
       Tests  7 passed (7)
    Start at  12:22:15
    Duration  150ms
-``` </code> </pre>
+```
   
 ### End-to-End Testing
 - **Tool**: Playwright
@@ -160,15 +181,15 @@ The application was tested using three approaches to ensure quality and reliabil
 1. `login.spec.js` – Verifies login flow and redirect
 2. `addRecipe.spec.js` – Verifies form submission and new recipe rendering
 - **Test results**
-<pre> <code>``` 
+```txt
 ✓  1 ….spec.js:3:5 › login flow works correctly (657ms)
 1 passed (1.3s)
-``` </code> </pre>
+```
 
-<pre> <code>``` 
+```txt
 ✓  1 …5 › user can add a new recipe successfully (1.9s)
 1 passed (2.6s)
-``` </code> </pre> 
+``` 
 
 ### Load Testing
 - **Tool**: k6
