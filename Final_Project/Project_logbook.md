@@ -36,4 +36,5 @@
 | 18.4.2025 | 1 | Implementing the phase 2  | Enhancing the About page | 
 | 18.4.2025 | 3.5 | Implementing the phase 2  | Testing & Documenting the test reports | 
 | 18.4.2025 | 3 | Implementing the phase 2  | Uplaoding the app on Github and Azure | 
-| 19.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 41h
+| 19.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 
+| 30.4.2025 | 2 | Implementing the phase 4  | Documentation on GitHub | 43h
