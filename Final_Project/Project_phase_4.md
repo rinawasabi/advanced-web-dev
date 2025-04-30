@@ -22,7 +22,9 @@ The app development focused on a platform that encourages sharing simple, practi
 
 ## Use case summary
 
-The original use cases defined in Phase 1 are [here](https://github.com/rinawasabi/advanced-web-dev/blob/main/Final_Project/Project_phase_1.md#2-use-cases-and-user-flows). Additionally, the 6th function was added to enhance the function of the application.
+The original use cases defined in Phase 1 are <a href="https://github.com/rinawasabi/advanced-web-dev/blob/main/Final_Project/Project_phase_1.md#2-use-cases-and-user-flows" target="_blank">here</a>. Additionally, the 6th function was added to enhance the function of the application.
+
+
 
 
 | Number | Use Case               | Implemented (Yes/No) | Demonstration / Notes                          |
@@ -44,42 +46,45 @@ _Describe technologies used, architectural decisions, and how key features were 
 
 
 ## Development process
-## Development Process
-
-The project was developed in four phases:
+The project was originally planned to be in four phases; however, Phase 2 and 3 were put together. 
 
 - **Phase 1 – Planning**: Defined user personas and five key use cases (login, view, add, edit, filter/search recipes). Created wireframes using Figma and outlined the tech stack.
-- **Phase 2 – Core Features**: Set up the React frontend and Node.js backend. Connected to an Azure PostgreSQL database and implemented full CRUD functionality for recipes.
-- **Phase 3 – Testing and Enhancements**: Added unit and end-to-end testing. Load tested the API. Also added a search bar and "My Recipes" filtering.
-- **Phase 4 – Presentation**: Finalized UI, cleaned up the codebase, removed debug code, and prepared the GitHub documentation and presentation materials.
+- **Phase 2 & 3 – Implementation**: Set up the React frontend and Node.js backend. Connected to an Azure PostgreSQL database and implemented full CRUD functionality for recipes. Added unit and end-to-end testing. Load tested the API. 
+- **Phase 4 – Presentation**:  Prepared the GitHub documentation and presentation materials.
 
 Throughout the development, I kept the app simple and focused on usability. One key decision was using localStorage instead of full authentication to reduce complexity while still supporting user-specific filtering.
-
-
-
 
 
 ## Reflection and future work
 
 **What worked well**
+- All planned use cases were successfully implemented.
+- The lightweight login system using localStorage worked smoothly and simplified development.
+- The React component structure remained clean and easy to maintain throughout the project.
+- Getting to know PostgreSQL on Azure was insightful experience.
+- No specific problem found in testing.
+- The app's UI and UX looks and works as I planned.
+- Version control with GitHub made tracking changes and organizing phases efficient.
+
 
 
 **Challenges**
 
 Building an application from scratch independently was a first-time experience, thus the overall journey was not an easy one.  
-Some of the main challenges were:
+Some of the main challenges were
 - Deploying both frontend and backend on Azure for the first time
-- The databes on Azure broke once and had to build a new one
+- Rebuilding a new PostgreSQL database on Azure as the original one broke unexpectedly during development
 - Fixing layout and styling bugs in the footer and recipe form components
 - Debugging CORS and API connection issues between frontend and backend
-- Adjusting the UI for responsive design across devices
-- Designing a working database schema that supports filtering, user-specific recipes, and editing features
 
 Despite these challenges, each challenge helped me to learn more about full-stack development and I could cultivate my problem-solving skills.
 
 
 **Improvement in the future**
 
+- Implementing more robust and real login and signin function
+- Adjusting the UI for responsive design across devices
+- Implementing Like and Share functions
 
 
 ## Work Hours Log
