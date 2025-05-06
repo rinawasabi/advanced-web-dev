@@ -56,11 +56,39 @@ Makunote is a full-stack web application built with:
 
 
 ## Development process
-The project was originally planned to be in four phases; however, Phase 2 and 3 were put together. 
 
-- **Phase 1 – Planning**: Defined user personas and five key use cases (login, view, add, edit, filter/search recipes). Created wireframes using Figma and outlined the tech stack.
-- **Phase 2 & 3 – Implementation**: Set up the React frontend and Node.js backend. Connected to an Azure PostgreSQL database and implemented full CRUD functionality for recipes. Added unit and end-to-end testing. Load tested the API. 
-- **Phase 4 – Presentation**:  Prepared the GitHub documentation and presentation materials.
+### 1. Initial Planning
+- Defined the concept: a recipe-sharing web app called *Makunote* for simple, everyday cooking.
+- Created user personas and use cases.
+- Designed UI prototypes using Figma.
+- Key Decision: Use cases were designed based on my current skill level. Challenging enough but not too difficult to implement.
+
+### 2. Technical Setup
+- Initialized the frontend using React.
+- Set up the backend with Node.js + Express.
+- Configured a PostgreSQL database hosted on Azure.
+- Established the basic folder structure and API routes.
+- Key Decision: PostgreSQL was chosen because of good compatibility with Azure.
+  
+### 3. Feature Implementation
+- Implemented CRUD operations for recipes.
+- Built login functionality.
+- Added "My Recipes" view to filter recipes created by the logged-in user.
+- Developed a search bar to filter recipes by title or ingredients (available only in "All Recipes" view).
+- Applied form validation and basic error handling.
+- Key Decision:
+
+### 4. Testing
+- Wrote unit tests using Vitest.
+- Created end-to-end tests with Playwright.
+- Performed load testing with k6 to simulate user traffic.
+- Key Decision: These testing tools were selected as I had learned about them in the course, and I wanted to try them in a real project.
+
+### 5. Deployment & Final Adjustments
+- Deployed both frontend and backend to Azure App Services.
+- Updated all API endpoints in the frontend to connect with the deployed backend.
+- Polished the UI and removed debug/test code.
+- Key Decision: After user testing, I recognized what should be improved, so I had to change the API endpoints.
 
 Throughout the development, I kept the app simple and focused on usability. One key decision was using localStorage instead of full authentication to reduce complexity while still supporting user-specific filtering.
 
@@ -74,14 +102,11 @@ Throughout the development, I kept the app simple and focused on usability. One 
 - Getting to know PostgreSQL on Azure was insightful experience.
 - No specific problem found in testing.
 - The app's UI and UX looks and works as I planned.
-- Version control with GitHub made tracking changes and organizing phases efficient.
-
-
 
 **Challenges**
 
 Building an application from scratch independently was a first-time experience, thus the overall journey was not an easy one.  
-Some of the main challenges were
+Some of the main challenges were:
 - Deploying both frontend and backend on Azure for the first time
 - Rebuilding a new PostgreSQL database on Azure as the original one broke unexpectedly during development
 - Fixing layout and styling bugs in the footer and recipe form components
@@ -92,9 +117,11 @@ Despite these challenges, each challenge helped me to learn more about full-stac
 
 **Improvement in the future**
 
-- Implementing more robust and real login and signin function
-- Adjusting the UI for responsive design across devices
-- Implementing Like and Share functions
+A few things that I can improve in the future are:
+- Implementing more robust and real login and sign-in function
+- Adjusting the UI for responsive design across all devices
+- Adding Like and Share functions
+- Implementing comment section under the recipe - when others try out the recipe, they can leave the comment
 
 
 ## Work Hours Log
