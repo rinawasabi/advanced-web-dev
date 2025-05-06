@@ -17,7 +17,7 @@ Makunote is a simple and intuitive recipe-sharing web application designed to he
 - Anyone who wants a personal digital cookbook
 
 **Context**
-
+Many people seek quick and simple ways to manage everyday cooking, but existing apps are often too complex for casual users. Makunote was created as a minimalist and user-friendly platform to store, browse and share personal recipes without unnecessary features.
 
 ## Use case summary
 
@@ -88,7 +88,7 @@ Makunote is a full-stack web application built with:
 - Deployed both frontend and backend to Azure App Services.
 - Updated all API endpoints in the frontend to connect with the deployed backend.
 - Polished the UI and removed debug/test code.
-- Key Decision: After user testing, I recognized what should be improved, so I had to change the API endpoints.
+- Key Decision: After user testing, I recognized what should be improved - polishing the UI was done.
 
 Throughout the development, I kept the app simple and focused on usability. One key decision was using localStorage instead of full authentication to reduce complexity while still supporting user-specific filtering.
 
