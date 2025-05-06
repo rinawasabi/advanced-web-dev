@@ -8,8 +8,7 @@
 
 **The Project’s Purpose**
 
-Makunote is a simple and intuitive recipe-sharing web application designed to help people store, organize, and discover everyday recipes. The app provides a lightweight solution for home cooks, students, and anyone who wants to quickly jot down their favorite meals and explore others’ cooking ideas.
-The app development focused on a platform that encourages sharing simple, practical meals—especially for busy individuals who cook regularly.
+Makunote is a simple and intuitive recipe-sharing web application designed to help people store, organize and discover everyday recipes. The app provides a lightweight solution for home cooks, students and anyone who wants to quickly jot down their favorite meals and explore others’ cooking ideas.
 
 **Target Users**
 - Home cooks who want to store and organize family recipes
@@ -38,10 +37,21 @@ The original use cases defined in Phase 1 are <a href="https://github.com/rinawa
 
 
 
-
 ## Technical implementation
 
-_Describe technologies used, architectural decisions, and how key features were implemented._
+**Technologies used**
+
+Makunote is a full-stack web application built with:
+- Frontend: React (with React Router), CSS
+- Backend: Node.js + Express, REST API
+- Database: PostgreSQL hosted on Azure
+- Testing: Vitest, Playwright, k6
+- Deployment: Azure App Services (frontend & backend)
+
+**Architectural Decisions**
+
+
+**Implementation of key features**
 
 
 
