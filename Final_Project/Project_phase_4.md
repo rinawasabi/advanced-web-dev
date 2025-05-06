@@ -17,6 +17,7 @@ Makunote is a simple and intuitive recipe-sharing web application designed to he
 - Anyone who wants a personal digital cookbook
 
 **Context**
+
 Many people seek quick and simple ways to manage everyday cooking, but existing apps are often too complex for casual users. Makunote was created as a minimalist and user-friendly platform to store, browse and share personal recipes without unnecessary features.
 
 ## Use case summary
