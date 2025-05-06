@@ -8,7 +8,7 @@
 
 **The Project’s Purpose**
 
-Makunote is a simple and intuitive recipe-sharing web application designed to help people store, organize and discover everyday recipes. The app provides a lightweight solution for home cooks, students and anyone who wants to quickly jot down their favorite meals and explore others’ cooking ideas.
+Makunote is a simple and intuitive recipe-sharing web application designed to help people store, organize and discover everyday recipes. The app provides a lightweight solution for anyone who wants to quickly jot down their favorite meals and explore others’ ideas.
 
 **Target Users**
 - Home cooks who want to store and organize family recipes
@@ -23,8 +23,6 @@ Many people seek quick and simple ways to manage everyday cooking, but existing 
 ## Use case summary
 
 The original use cases defined in Phase 1 are <a href="https://github.com/rinawasabi/advanced-web-dev/blob/main/Final_Project/Project_phase_1.md#2-use-cases-and-user-flows" target="_blank">here</a>. Additionally, the 6th function was added to enhance the function of the application.
-
-
 
 
 | Number | Use Case               | Implemented (Yes/No) | Demonstration / Notes                          |
@@ -51,8 +49,33 @@ Makunote is a full-stack web application built with:
 
 **Architectural Decisions**
 
+- **Frontend & backend separation** for modularity and easier deployment.
+- **RESTful API** for clear client-server communication.
+- **Login via localStorage** to keep authentication lightweight and simple.
+- **Azure-hosted PostgreSQL** for reliable, scalable cloud-based data storage.
+- **Reusable React components** (e.g., Navbar, RecipeCard) for clean code.
+- **Single Page Application** using React Router for smooth navigation.
 
-**Implementation of key features**
+
+ **Implementation of Key Features**
+
+- **Local login**  
+  Username stored with `localStorage` to manage and filter personal recipes.
+- **Recipe CRUD**  
+  Users can create, view, edit, and delete recipes they own.
+- **Recipe Detail View**  
+  Shows full content with edit/delete options for the owner only.
+- **View toggle**  
+  Switch between "All Recipes" and "My Recipes".
+- **Search bar**  
+  Available in "All Recipes" to filter by title or ingredients.
+- **Responsive UI**  
+  Clean, mobile-friendly design based on Figma prototype.
+- **Testing**  
+  - **Vitest** for unit tests  
+  - **Playwright** for end-to-end tests  
+  - **k6** for load testing
+
 
 
 
@@ -89,9 +112,7 @@ Makunote is a full-stack web application built with:
 - Deployed both frontend and backend to Azure App Services.
 - Updated all API endpoints in the frontend to connect with the deployed backend.
 - Polished the UI and removed debug/test code.
-- Key Decision: After user testing, I recognized what should be improved - polishing the UI was done.
-
-Throughout the development, I kept the app simple and focused on usability. One key decision was using localStorage instead of full authentication to reduce complexity while still supporting user-specific filtering.
+- Key Decision: Polishing the UI was done according to the user feedback.
 
 
 ## Reflection and future work
