@@ -10,7 +10,7 @@
 | 30.3.2025 | 1 | Planning the phase 1  | Defining Information Architecture and Technical Design |
 | 31.3.2025 | 2 | Planning the phase 1  | Making the Prototype |
 | 31.3.2025 | 1 | Planning the phase 1  | Polishing the Plan |
-| 1.4.2025 | 2 | Planning the phase 1  | Polishing the Plan | 14h
+| 1.4.2025 | 2 | Planning the phase 1  | Polishing the Plan | 
 | 1.4.2025 | 2.5 | Implementing the phase 2  | Setting up the environment |
 | 1.4.2025 | 1 | Implementing the phase 2  | Creating the Homepage |
 | 2.4.2025 | 1 | Implementing the phase 2  | Creating the Add Recipe page (frontend) |
@@ -39,5 +39,6 @@
 | 19.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 
 | 30.4.2025 | 2 | Implementing the phase 4  | Documentation on GitHub | 
 | 6.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 
-| 7.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 47h
-| **Total**  | **h** |   |  | 
+| 7.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 
+| 7.5.2025 | 2 | Implementing the phase 4  | Preparing the presentation script | 
+| **Total**  | **63h** |   |  | 
