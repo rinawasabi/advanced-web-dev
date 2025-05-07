@@ -11,27 +11,27 @@
 Makunote is a simple and intuitive recipe-sharing web application designed to help people store, organize and discover everyday recipes. The app provides a lightweight solution for anyone who wants to quickly jot down their favorite meals and explore others’ ideas.
 
 **Target Users**
-- Home cooks who want to store and organize family recipes
-- University students looking for easy everyday meals
-- Hobbyist or beginner cooks who want inspiration from others
-- Anyone who wants a personal digital cookbook
+- Home cooks who want to organize family recipes  
+- University students looking for easy meals  
+- Hobbyist or beginner cooks seeking inspiration  
+- Anyone wanting a personal digital cookbook
 
 **Context**
 
 Many people seek quick and simple ways to manage everyday cooking, but existing apps are often too complex for casual users. Makunote was created as a minimalist and user-friendly platform to store, browse and share personal recipes without unnecessary features.
 
 ## Use case summary
-The original use cases defined in Phase 1 are <a href="https://github.com/rinawasabi/advanced-web-dev/blob/main/Final_Project/Project_phase_1.md#2-use-cases-and-user-flows" target="_blank">here</a>. Additionally, the 6th function was added to enhance the function of the application.
+The original use cases defined in Phase 1 are <a href="https://github.com/rinawasabi/advanced-web-dev/blob/main/Final_Project/Project_phase_1.md#2-use-cases-and-user-flows" target="_blank">here</a>. Additionally, a 6th function was added to enhance the function of the application.
 
 
 | Number | Use Case               | Implemented (Yes/No) | Demonstration / Notes                          |
 |--------|------------------------|-----------------------|------------------------------------------------|
 | 1      | Log in as a User       | Yes                   | Login via localStorage. Demo at 2:45 in the video. |
-| 2      | View Recipes           | Yes                   | Recipes can be viewed globally or filtered by user. Demo at 2:45 in the video.    |
+| 2      | View Recipes           | Yes                   | Recipes shown globally or filtered by user. Demo at 2:45 in the video.    |
 | 3      | Add a New Recipe       | Yes                   | Form with validation sends data to backend. Demo at 2:45 in the video. | 
-| 4      | Edit Own Recipe        | Yes                   | Recipes can be updated with pre-filled form. Demo at 2:45 in the video. |
+| 4      | Edit Own Recipe        | Yes                   | Update with pre-filled form. Demo at 2:45 in the video. |
 | 5      | Filter Own Recipes     | Yes                   | The page shows only the user's entries. Demo at 2:45 in the video. |
-| 6      | Search a Recipe        | Yes                   | Search bar filters recipes by title/ingredients. Demo at 2:45 in the video. |
+| 6      | Search a Recipe        | Yes                   | Filters recipes by title/ingredients. Demo at 2:45 in the video. |
 
 
 
@@ -58,16 +58,16 @@ Makunote is a full-stack web application built with:
 
  **Implementation of Key Features**
 
-- **Local login**  
-  Username stored with `localStorage` to manage and filter personal recipes.
+- **Local Login**  
+  Used `localStorage` to store the username and filter user-specific recipes.
 - **Recipe CRUD**  
-  Logged-in users can create, view, edit, and delete recipes they own.
+  Handled with RESTful API routes (`POST`, `GET`, `PUT`, `DELETE`) using Express and PostgreSQL.
 - **Recipe Detail View**  
-  Shows full content with edit/delete options for the owner only.
-- **View toggle**  
-  Switch between "All Recipes" and "My Recipes".
-- **Search bar**  
-  Available in "All Recipes" to filter by title or ingredients.
+  Linked via React Router. Shows full content with edit/delete options for the owner.
+- **View Toggle**  
+  React state toggles between "All Recipes" and "My Recipes" based on username match.
+- **Search Bar**  
+  Uses `recipes.filter()` in React to filter by title or ingredients in real time.
 
 
 ## Development process
@@ -76,7 +76,7 @@ Makunote is a full-stack web application built with:
 - Created user personas and use cases.
 - Designed UI prototypes using Figma.
 - Key Decision: Use cases were designed based on my current skill level. Challenging enough but not too difficult to implement.
-- Change: Initially, implementing a real login system, however a simpler localStorage-based method was chosen as full authentication would have been too time-consuming and complex for a beginner project.
+- Change: Initially, a real login system was planned, however a simpler localStorage-based method was chosen as full authentication would have been too time-consuming and complex for a beginner.
 
 ### 2. Technical Setup
 - Initialized the frontend using React.
