@@ -38,4 +38,5 @@
 | 18.4.2025 | 3 | Implementing the phase 2  | Uplaoding the app on Github and Azure | 
 | 19.4.2025 | 2 | Implementing the phase 2  | Documentation on GitHub | 
 | 30.4.2025 | 2 | Implementing the phase 4  | Documentation on GitHub | 
-| 6.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 45h
+| 6.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 
+| 7.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 47h
