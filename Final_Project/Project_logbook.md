@@ -40,3 +40,4 @@
 | 30.4.2025 | 2 | Implementing the phase 4  | Documentation on GitHub | 
 | 6.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 
 | 7.5.2025 | 2 | Implementing the phase 4  | Updating the documents on GitHub | 47h
+| **Total**  | **h** |   |  | 
