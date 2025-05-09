@@ -26,12 +26,12 @@ The original use cases defined in Phase 1 are <a href="https://github.com/rinawa
 
 | Number | Use Case               | Implemented (Yes/No) | Demonstration / Notes                          |
 |--------|------------------------|-----------------------|------------------------------------------------|
-| 1      | Log in as a User       | Yes                   | Login via localStorage. |
-| 2      | View Recipes           | Yes                   | Recipes shown globally or filtered by user.    |
-| 3      | Add a New Recipe       | Yes                   | Form with validation sends data to backend.  | 
-| 4      | Edit Own Recipe        | Yes                   | Update with pre-filled form. |
-| 5      | Filter Own Recipes     | Yes                   | The page shows only the user's entries. |
-| 6      | Search a Recipe        | Yes                   | Filters recipes by title/ingredients. |
+| 1      | Log in as a User       | Yes                   | Login via localStorage. Demo at 1:00 in the video. |
+| 2      | View Recipes           | Yes                   | Recipes shown globally or filtered by user. Demo at 1:40 in the video. |
+| 3      | Add a New Recipe       | Yes                   | Form with validation sends data to backend. Demo at 2:35 in the video. | 
+| 4      | Edit Own Recipe        | Yes                   | Update with pre-filled form. Demo at 3:50 in the video. |
+| 5      | Filter Own Recipes     | Yes                   | The page shows only the user's entries. Demo at 5:06 in the video. |
+| 6      | Search a Recipe        | Yes                   | Filters recipes by title/ingredients. Demo at 5:43 in the video. |
 
 
 
@@ -188,4 +188,4 @@ A few things that I can improve in the future are:
 
 
 ## Presentation link
-The link of the presentation about this application is [here]().
+The link of the presentation about this application is [here](https://www.youtube.com/watch?v=WMJhjgvXHPA).
